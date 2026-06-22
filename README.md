@@ -18,6 +18,12 @@ Transform every focus session into an ocean exploration adventure—then surface
 
 [Explore DeepOcean](https://deepocean.io.vn) · [See the experience](#product-screens) · [Run locally](#local-development)
 
+<br />
+
+<a href="https://deepocean.io.vn">
+  <img src="./public/assets/ocean-portal-wide.png" alt="A diver entering the glowing DeepOcean portal" width="100%" />
+</a>
+
 </div>
 
 ---
@@ -30,23 +36,22 @@ It is designed for students, developers, creators, remote workers, people with A
 
 <table>
   <tr>
-    <td align="center"><img src="./public/screenshots/home.png" alt="DeepOcean home screen" width="180" /></td>
-    <td align="center"><img src="./public/screenshots/dive.png" alt="DeepOcean active dive screen" width="180" /></td>
-    <td align="center"><img src="./public/screenshots/ai.png" alt="DeepOcean AI companion screen" width="180" /></td>
-    <td align="center"><img src="./public/screenshots/stats.png" alt="DeepOcean statistics screen" width="180" /></td>
-    <td align="center"><img src="./public/screenshots/widget.png" alt="DeepOcean widget" width="180" /></td>
+    <td align="center" width="33%">
+      <img src="./public/screenshots/home.png" alt="DeepOcean home screen" width="260" />
+    </td>
+    <td align="center" width="33%">
+      <img src="./public/screenshots/dive.png" alt="DeepOcean active dive screen" width="260" />
+    </td>
+    <td align="center" width="33%">
+      <img src="./public/screenshots/ai.png" alt="DeepOcean AI companion screen" width="260" />
+    </td>
   </tr>
   <tr>
-    <td align="center"><sub>Home</sub></td>
-    <td align="center"><sub>Focus dive</sub></td>
-    <td align="center"><sub>AI companion</sub></td>
-    <td align="center"><sub>Statistics</sub></td>
-    <td align="center"><sub>Widget</sub></td>
+    <td align="center"><strong>Begin a dive</strong><br /><sub>Pick a rhythm and protect your attention.</sub></td>
+    <td align="center"><strong>Go below the surface</strong><br /><sub>Watch focused time become ocean depth.</sub></td>
+    <td align="center"><strong>Surface with insight</strong><br /><sub>Turn each session into a better next step.</sub></td>
   </tr>
 </table>
-
-> [!NOTE]
-> Production screenshots are not committed yet. Add them to [`public/screenshots/`](./public/screenshots/) using the filenames referenced above. Until then, the image links act as intentional TODO placeholders.
 
 ## What is DeepOcean?
 
@@ -130,23 +135,53 @@ Explore weekly patterns, mood-correlated trends, preferred session lengths, dept
 
 ## Product screens
 
-| Home | Dive session |
-|:---:|:---:|
-| ![DeepOcean home screen](./public/screenshots/home.png) | ![DeepOcean active dive session](./public/screenshots/dive.png) |
-| Daily guidance, quick-start durations, streaks, level, and recent progress. | A cinematic, low-distraction timer with depth, zone, pause, surface, and discovery states. |
+<table>
+  <tr>
+    <td align="center" width="33%"><img src="./public/screenshots/home.png" alt="DeepOcean home screen" width="250" /></td>
+    <td align="center" width="33%"><img src="./public/screenshots/dive.png" alt="DeepOcean dive session screen" width="250" /></td>
+    <td align="center" width="33%"><img src="./public/screenshots/collection.png" alt="DeepOcean expedition collection screen" width="250" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Home</strong><br /><sub>Guidance, quick starts, streaks, and depth progress.</sub></td>
+    <td align="center"><strong>Dive session</strong><br /><sub>A cinematic timer built to stay out of your way.</sub></td>
+    <td align="center"><strong>Expedition log</strong><br /><sub>Discover creatures, artifacts, rarities, and lore.</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./public/screenshots/ai.png" alt="DeepOcean Marine Guide AI screen" width="250" /></td>
+    <td align="center"><img src="./public/screenshots/stats.png" alt="DeepOcean dive analytics screen" width="250" /></td>
+    <td align="center"><img src="./public/screenshots/premium.png" alt="DeepOcean Pro profile screen" width="250" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Marine Guide</strong><br /><sub>Personal reflections shaped by your focus behavior.</sub></td>
+    <td align="center"><strong>Dive analytics</strong><br /><sub>See weekly rhythm, records, and expedition history.</sub></td>
+    <td align="center"><strong>DeepOcean Pro</strong><br /><sub>Premium themes, deeper insights, and full journals.</sub></td>
+  </tr>
+</table>
 
-| Collection | AI companion |
-|:---:|:---:|
-| ![DeepOcean collection screen](./public/screenshots/collection.png) | ![DeepOcean AI companion screen](./public/screenshots/ai.png) |
-| Creatures, artifacts, rarity, sightings, lore, and expedition notes earned through focus. | Personal reflections and practical guidance informed by goals and recent focus behavior. |
+## The ocean, beyond the app
 
-| Statistics | Premium |
-|:---:|:---:|
-| ![DeepOcean statistics screen](./public/screenshots/stats.png) | ![DeepOcean premium screen](./public/screenshots/premium.png) |
-| Weekly focus shape, expedition history, records, streaks, and long-term progression. | Premium themes, deeper insights, full field journals, and an enhanced ocean experience. |
+DeepOcean extends the same calm visual language to native widgets, giving each diver a glanceable view of progress without pulling them back into the app.
 
-> [!IMPORTANT]
-> Screenshot TODO: replace `home.png`, `dive.png`, `collection.png`, `ai.png`, `stats.png`, `premium.png`, and `widget.png` in `public/screenshots/` with final production captures. Portrait app screens work best at a consistent aspect ratio and resolution.
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="./public/screenshots/living_ocean_large.png" alt="DeepOcean Living Ocean widget with an illuminated whale" width="320" />
+    </td>
+    <td align="center" width="33%">
+      <img src="./public/screenshots/ocean_portal_large.png" alt="DeepOcean Ocean Portal widget with a whale beneath the surface" width="320" />
+    </td>
+    <td align="center" width="33%">
+      <img src="./public/screenshots/diving_instrument_large.png" alt="DeepOcean Diving Instrument widget showing depth and focus progress" width="320" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Living Ocean</strong><br /><sub>A living glimpse of the zone you are exploring.</sub></td>
+    <td align="center"><strong>Ocean Portal</strong><br /><sub>Progress and discoveries framed as an invitation to return.</sub></td>
+    <td align="center"><strong>Diving Instrument</strong><br /><sub>Depth, streak, discoveries, and session progress at a glance.</sub></td>
+  </tr>
+</table>
+
+Each concept includes large, medium, and small variants in [`public/screenshots/`](./public/screenshots/) for native widget surfaces.
 
 ## Why DeepOcean is different
 
