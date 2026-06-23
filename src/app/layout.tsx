@@ -29,12 +29,16 @@ export const metadata: Metadata = {
   applicationName: "Deep Ocean",
   title: "Deep Ocean — Turn Focus Into a Dive",
   description:
-    "A cinematic focus app where minutes become depth, discoveries, XP, streaks, expedition history, and calm personal guidance.",
+    "Deep Ocean is a focus app where timed or open-ended dive sessions become depth, discoveries, progress, expedition history, and calm personal guidance.",
   keywords: [
     "focus app",
     "focus timer",
+    "ocean meditation",
+    "deep focus",
     "deep work",
     "productivity",
+    "AI companion",
+    "dive session",
     "ocean",
     "pomodoro",
     "habit tracker",
@@ -45,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Deep Ocean — Turn Focus Into a Dive",
     description:
-      "Focus deeper, surface calmer. A cinematic focus system with ocean progression, discoveries, AI guidance, widgets, and Live Activities.",
+      "Focus deeper, surface calmer with real dive sessions, ocean progression, discoveries, local history, and optional AI guidance.",
     url: "/",
     siteName: "Deep Ocean",
     type: "website",
@@ -62,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Deep Ocean — Turn Focus Into a Dive",
     description:
-      "Focus deeper, surface calmer with cinematic focus dives, ocean progression, discoveries, and personal guidance.",
+      "A focus app with ocean dive sessions, discoveries, local progress, and optional personal guidance.",
     images: ["/assets/ocean-portal-wide.png"],
   },
   robots: {

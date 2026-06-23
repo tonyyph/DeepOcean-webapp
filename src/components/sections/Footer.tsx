@@ -21,10 +21,10 @@ export function Footer() {
           </div>
         ))}
       </div>
-      <div id="legal-placeholder" className="footer-bottom">
+      <div id="launch-notes" className="footer-bottom">
         <span>© {new Date().getFullYear()} Deep Ocean</span>
         <span id="contact-placeholder">
-          Contact, legal URLs, and store listing links pending.
+          Privacy policy, terms, contact, and store listing URLs pending.
         </span>
       </div>
     </footer>

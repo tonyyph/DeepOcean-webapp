@@ -32,7 +32,7 @@ export default function Navbar() {
       </div>
 
       <a className="nav-cta" href={siteLinks.primaryCta}>
-        Join the beta
+        Coming soon
       </a>
 
       <button

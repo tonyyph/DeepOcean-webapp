@@ -1,4 +1,4 @@
-import { PhoneMockup } from "@/components/mockups/PhoneMockup";
+import { AppScreenshot } from "@/components/ui/AppScreenshot";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { screenPreviews } from "@/content/landingContent";
@@ -9,8 +9,8 @@ export function ScreensPreviewSection() {
       <div className="section-inner">
         <SectionHeading
           eyebrow="Product preview"
-          title="The real app flow, rebuilt as faithful web mockups."
-          description="These previews follow the current mobile screen hierarchy and wording. Replace them with final App Store screenshots whenever those are ready."
+          title="The real app, without stand-ins."
+          description="Every image below is a current mobile-app capture. No generated phone UI and no reconstructed screenshots."
         />
         <div className="screen-gallery">
           {screenPreviews.map((screen, index) => (
@@ -20,13 +20,18 @@ export function ScreensPreviewSection() {
                 <h3>{screen.title}</h3>
                 <p>{screen.description}</p>
               </div>
-              <PhoneMockup
-                screen={screen.id as "home" | "dive" | "collection" | "insights"}
+              <AppScreenshot
+                screen={screen.id}
                 compact
               />
             </Reveal>
           ))}
         </div>
+        <p className="capture-note">
+          Still needed: onboarding, surfaced rewards, session detail, the
+          actual paywall, notifications, and real-device Live Activity
+          captures. See the asset audit for the complete capture list.
+        </p>
       </div>
     </section>
   );

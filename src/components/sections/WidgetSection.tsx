@@ -25,39 +25,33 @@ export function WidgetSection() {
           </div>
         </div>
 
-        <Reveal className="widget-visual">
-          <div className="widget-wide">
+        <Reveal className="widget-capture-grid">
+          <figure className="widget-capture widget-capture-wide">
             <Image
-              src="/assets/living-whale-wide.png"
-              alt="Deep Ocean living whale widget artwork"
+              src="/screenshots/ocean_portal_large.png"
+              alt="Real Deep Ocean Ocean Portal large widget preview"
               fill
               sizes="(max-width: 800px) 90vw, 560px"
             />
-            <div className="widget-overlay">
-              <span>DIVE IN PROGRESS</span>
-              <strong>18:42</strong>
-              <small>684 m · Twilight Zone</small>
-              <button type="button">Pause session</button>
-            </div>
-          </div>
-          <div className="widget-square">
+          </figure>
+          <figure className="widget-capture">
             <Image
-              src="/assets/living-jellyfish-square.png"
-              alt="Deep Ocean living jellyfish widget artwork"
-              fill
-              sizes="220px"
+              src="/screenshots/diving_instrument_large.png"
+              alt="Real Deep Ocean Diving Instrument large widget preview"
+              fill sizes="(max-width: 800px) 90vw, 360px"
             />
-            <div className="widget-square-overlay">
-              <span>7 day streak</span>
-              <strong>25m</strong>
-              <small>Start focus</small>
-            </div>
-          </div>
-          <div className="live-activity">
-            <span className="live-dot" />
-            <strong>Deep Ocean</strong>
-            <small>12:08 left · 420 m</small>
-          </div>
+          </figure>
+          <figure className="widget-capture">
+            <Image
+              src="/screenshots/living_ocean_large.png"
+              alt="Real Deep Ocean Living Ocean large widget preview"
+              fill sizes="(max-width: 800px) 90vw, 360px"
+            />
+          </figure>
+          <p className="widget-capture-note">
+            Native widget previews from the current implementation. A
+            real-device Live Activity capture is still needed.
+          </p>
         </Reveal>
       </div>
     </section>

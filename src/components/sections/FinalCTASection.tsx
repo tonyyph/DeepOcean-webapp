@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, Apple, Play } from "lucide-react";
-import { siteLinks } from "@/content/landingContent";
+import { Apple, Play } from "lucide-react";
 
 export function FinalCTASection() {
   return (
@@ -11,22 +10,19 @@ export function FinalCTASection() {
         <p className="eyebrow">The next dive starts at the surface</p>
         <h2>Give your focus somewhere deeper to go.</h2>
         <p>
-          Join the Deep Ocean beta and turn the next protected block of time
-          into an expedition worth remembering.
+          Deep Ocean is preparing for release. Store links will appear here
+          when the production listings are confirmed.
         </p>
         <div id="store-links" className="store-buttons">
-          <a href={siteLinks.appStore} aria-label="App Store link placeholder">
+          <span aria-label="App Store availability coming soon">
             <Apple size={22} />
-            <span><small>Placeholder for</small>App Store</span>
-          </a>
-          <a href={siteLinks.playStore} aria-label="Google Play link placeholder">
+            <span><small>Coming soon on</small>App Store</span>
+          </span>
+          <span aria-label="Google Play availability coming soon">
             <Play size={20} />
-            <span><small>Placeholder for</small>Google Play</span>
-          </a>
+            <span><small>Coming soon on</small>Google Play</span>
+          </span>
         </div>
-        <a className="text-link" href={siteLinks.contact}>
-          Contact link placeholder <ArrowRight size={16} />
-        </a>
       </div>
     </section>
   );

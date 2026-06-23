@@ -20,10 +20,8 @@ import {
 export const siteLinks = {
   primaryCta: "#final-cta",
   secondaryCta: "#how-it-works",
-  appStore: "#store-links",
-  playStore: "#store-links",
-  privacy: "#legal-placeholder",
-  terms: "#legal-placeholder",
+  privacy: "#privacy",
+  terms: "#launch-notes",
   contact: "#contact-placeholder",
 } as const;
 
@@ -32,6 +30,7 @@ export const navItems = [
   { label: "Features", href: "#features" },
   { label: "Experience", href: "#screens" },
   { label: "Pro", href: "#premium" },
+  { label: "Privacy", href: "#privacy" },
 ] as const;
 
 export const problemSolution = {
@@ -142,11 +141,25 @@ export const screenPreviews = [
       "Catalog creatures and artifacts by rarity, revisit sightings, and unlock deeper field-journal entries with Pro.",
   },
   {
-    id: "insights",
-    label: "Guide & analytics",
-    title: "Patterns that point to the next dive",
+    id: "stats",
+    label: "Dive analytics",
+    title: "A history of protected attention",
     description:
-      "Review weekly focus and recent sessions, then use mood-aware companion guidance to choose a useful next step.",
+      "Review total focus, maximum depth, a seven-day heatmap, recent expeditions, and individual session reports.",
+  },
+  {
+    id: "ai",
+    label: "Marine Guide",
+    title: "Guidance grounded in your app context",
+    description:
+      "Daily recommendations, motivation, session reflection, mood selection, and a cached or local fallback when hosted AI is unavailable.",
+  },
+  {
+    id: "premium",
+    label: "Profile & Pro",
+    title: "Settings and premium access in one place",
+    description:
+      "Manage the diver profile, XP, themes, language, reminders, motion, haptics, audio, and verified Pro entitlements.",
   },
 ] as const;
 
@@ -200,9 +213,9 @@ export const intelligence = [
 
 export const progressMetrics = [
   { value: "5", label: "ocean zones", icon: Layers3 },
-  { value: "160+", label: "catalog entries", icon: FishSymbol },
-  { value: "7 days", label: "weekly rhythm", icon: Gauge },
-  { value: "∞", label: "free-dive length", icon: Waves },
+  { value: "164", label: "catalog entries", icon: FishSymbol },
+  { value: "500", label: "local session records", icon: Gauge },
+  { value: "EN / VI", label: "app languages", icon: Waves },
 ] as const;
 
 export const progressFeatures = [
@@ -220,27 +233,6 @@ export const progressFeatures = [
     icon: Trophy,
     title: "Long-term progression",
     body: "Levels, current and longest streaks, depth records, collection milestones, and title achievements reward return.",
-  },
-] as const;
-
-export const testimonials = [
-  {
-    quote:
-      "The dive metaphor makes starting feel gentler than opening another productivity tool.",
-    name: "Early focus tester",
-    role: "Placeholder testimonial",
-  },
-  {
-    quote:
-      "I came for the timer and stayed for the feeling of building an expedition log from my work.",
-    name: "Beta diver",
-    role: "Placeholder testimonial",
-  },
-  {
-    quote:
-      "The interface stays atmospheric without asking me to stare at it while I should be focusing.",
-    name: "Creative professional",
-    role: "Placeholder testimonial",
   },
 ] as const;
 
@@ -268,7 +260,7 @@ export const faqs = [
   {
     question: "Can I keep track of a dive outside the app?",
     answer:
-      "Yes. The native system includes home-screen widgets, background completion notifications, an Android active-dive notification, and iPhone Live Activity support.",
+      "The implementation includes home-screen widgets, timed-dive completion notifications, an Android active-dive notification, and iPhone Live Activity support. Final device and store QA is still required before release.",
   },
   {
     question: "Is Deep Ocean available now?",
@@ -296,9 +288,9 @@ export const footerGroups = [
   {
     title: "Company",
     links: [
-      { label: "Contact · placeholder", href: siteLinks.contact },
-      { label: "Privacy · placeholder", href: siteLinks.privacy },
-      { label: "Terms · placeholder", href: siteLinks.terms },
+      { label: "Privacy overview", href: siteLinks.privacy },
+      { label: "Launch notes", href: siteLinks.terms },
+      { label: "Contact pending", href: siteLinks.contact },
     ],
   },
 ] as const;

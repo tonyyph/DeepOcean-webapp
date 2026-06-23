@@ -19,10 +19,11 @@ export function PremiumSection() {
             <span>Designed as depth, not pressure.</span>
           </div>
           <a className="button button-premium" href={siteLinks.primaryCta}>
-            Get beta access
+            Follow launch status
           </a>
           <small className="placeholder-note">
-            Pricing and store purchase links are placeholders until production listings are supplied.
+            Production pricing and store availability are not published on
+            this page until the live offerings are confirmed.
           </small>
         </Reveal>
 

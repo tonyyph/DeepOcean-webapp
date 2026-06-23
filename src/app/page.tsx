@@ -7,10 +7,10 @@ import { Footer } from "@/components/sections/Footer";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
 import { PremiumSection } from "@/components/sections/PremiumSection";
+import { PrivacySection } from "@/components/sections/PrivacySection";
 import { ProblemSolutionSection } from "@/components/sections/ProblemSolutionSection";
 import { ScreensPreviewSection } from "@/components/sections/ScreensPreviewSection";
 import { StatsSection } from "@/components/sections/StatsSection";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { WidgetSection } from "@/components/sections/WidgetSection";
 import { landingCssVariables } from "@/lib/landingTheme";
 
@@ -30,7 +30,7 @@ export default function Home() {
       <AISection />
       <WidgetSection />
       <StatsSection />
-      <TestimonialsSection />
+      <PrivacySection />
       <FAQSection />
       <FinalCTASection />
       <Footer />

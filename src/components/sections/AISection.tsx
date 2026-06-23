@@ -6,36 +6,20 @@ export function AISection() {
   return (
     <section id="ai-companion" className="section ai-section">
       <div className="section-inner ai-grid">
-        <Reveal className="ai-console">
-          <div className="ai-console-header">
-            <span className="ai-pulse" />
-            <div>
-              <strong>Marine Guide</strong>
-              <small>Context from your recent rhythm</small>
-            </div>
-          </div>
-          <div className="ai-message">
-            <span>TODAY</span>
-            <p>
-              Your recent dives are strongest when you begin with one clear
-              task. Try 25 minutes and let consistency matter more than depth.
-            </p>
-          </div>
-          <div className="ai-context-row">
-            <span>Mood · Calm</span>
-            <span>Streak · 7 days</span>
-            <span>Zone · Twilight</span>
-          </div>
-          <div className="ai-provider-note">
-            Hosted provider when available · cached/local guide when offline
-          </div>
+        <Reveal className="ai-capture">
+          <Image
+            src="/screenshots/ai.png"
+            alt="Real Deep Ocean Marine Guide screen"
+            fill
+            sizes="(max-width: 800px) 78vw, 420px"
+          />
         </Reveal>
 
         <div>
           <SectionHeading
             eyebrow="AI & personalization"
             title="A companion that listens to the dive log."
-            description="Recommendations are grounded in user goals and actual app context—not a generic chat window bolted onto a timer."
+            description="Recommendations can use selected goals and actual app context. Hosted providers are optional; cache and a deterministic local guide keep basic guidance available."
           />
           <div className="intelligence-list">
             {intelligence.map((item, index) => {
@@ -53,3 +37,4 @@ export function AISection() {
     </section>
   );
 }
+import Image from "next/image";

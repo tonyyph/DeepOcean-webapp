@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ArrowDown, ArrowRight, Check } from "lucide-react";
-import { PhoneMockup } from "@/components/mockups/PhoneMockup";
+import { AppScreenshot } from "@/components/ui/AppScreenshot";
 import { Reveal } from "@/components/ui/Reveal";
 import { siteLinks } from "@/content/landingContent";
 
@@ -21,7 +21,7 @@ export function HeroSection() {
         <Reveal className="hero-copy">
           <div className="hero-brand-line">
             <Image src="/assets/app-icon.png" alt="" width={38} height={38} />
-            <span>Premium focus for iPhone & Android</span>
+            <span>Focus dives for iPhone & Android</span>
           </div>
           <h1>
             Focus deeper.
@@ -34,7 +34,7 @@ export function HeroSection() {
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href={siteLinks.primaryCta}>
-              Join the beta
+              Get launch updates
               <ArrowRight size={18} />
             </a>
             <a className="button button-secondary" href={siteLinks.secondaryCta}>
@@ -52,17 +52,7 @@ export function HeroSection() {
         <Reveal className="hero-device-stage" delay={0.15}>
           <div className="hero-orbit hero-orbit-one" />
           <div className="hero-orbit hero-orbit-two" />
-          <PhoneMockup screen="dive" />
-          <div className="floating-card floating-card-depth">
-            <small>LIVE DEPTH</small>
-            <strong>684 m</strong>
-            <span>Twilight Zone</span>
-          </div>
-          <div className="floating-card floating-card-reward">
-            <small>SURFACE REWARD</small>
-            <strong>+275 XP</strong>
-            <span>2 discoveries</span>
-          </div>
+          <AppScreenshot screen="dive" priority />
         </Reveal>
       </div>
       <div className="hero-depth-scale" aria-hidden>

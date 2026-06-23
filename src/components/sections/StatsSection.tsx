@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { progressFeatures, progressMetrics } from "@/content/landingContent";
@@ -25,23 +26,13 @@ export function StatsSection() {
           })}
         </div>
         <div className="progress-detail-grid">
-          <Reveal className="analytics-visual">
-            <div className="analytics-heading">
-              <span>WEEKLY FOCUS</span>
-              <strong>3h 42m</strong>
-            </div>
-            <div className="analytics-bars">
-              {[38, 74, 24, 58, 91, 46, 68].map((height, index) => (
-                <div key={index}>
-                  <i style={{ height: `${height}%` }} />
-                  <span>{["M", "T", "W", "T", "F", "S", "S"][index]}</span>
-                </div>
-              ))}
-            </div>
-            <div className="analytics-footer">
-              <span>Longest streak <strong>12 days</strong></span>
-              <span>Max depth <strong>4,280 m</strong></span>
-            </div>
+          <Reveal className="analytics-capture">
+            <Image
+              src="/screenshots/stats.png"
+              alt="Real Deep Ocean Dive Analytics screen"
+              fill
+              sizes="(max-width: 800px) 84vw, 440px"
+            />
           </Reveal>
           <div className="progress-feature-list">
             {progressFeatures.map((feature, index) => {
