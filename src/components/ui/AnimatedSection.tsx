@@ -4,19 +4,29 @@ import { motion, useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
 import { landingTheme } from "@/lib/landingTheme";
 
-type RevealProps = {
+type AnimatedSectionProps = {
   children: ReactNode;
   className?: string;
   delay?: number;
+  id?: string;
+  as?: "div" | "section";
 };
 
-export function Reveal({ children, className, delay = 0 }: RevealProps) {
+export function AnimatedSection({
+  children,
+  className,
+  delay = 0,
+  id,
+  as = "div",
+}: AnimatedSectionProps) {
   const reduceMotion = useReducedMotion();
+  const Component = as === "section" ? motion.section : motion.div;
 
   return (
-    <motion.div
+    <Component
+      id={id}
       className={className}
-      initial={reduceMotion ? false : { opacity: 0, y: 24 }}
+      initial={reduceMotion ? false : { opacity: 0, y: 28 }}
       whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{
@@ -26,6 +36,6 @@ export function Reveal({ children, className, delay = 0 }: RevealProps) {
       }}
     >
       {children}
-    </motion.div>
+    </Component>
   );
 }

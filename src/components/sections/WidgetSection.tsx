@@ -26,31 +26,17 @@ export function WidgetSection() {
         </div>
 
         <Reveal className="widget-capture-grid">
-          <figure className="widget-capture widget-capture-wide">
+          <figure className="widget-capture widget-concept-capture">
             <Image
-              src="/screenshots/ocean_portal_large.png"
-              alt="Real Deep Ocean Ocean Portal large widget preview"
+              src="/screenshots/widget-portal.png"
+              alt="Deep Ocean widget concept sheet showing Ocean Portal, Diving Instrument, and Living Ocean layouts"
               fill
-              sizes="(max-width: 800px) 90vw, 560px"
-            />
-          </figure>
-          <figure className="widget-capture">
-            <Image
-              src="/screenshots/diving_instrument_large.png"
-              alt="Real Deep Ocean Diving Instrument large widget preview"
-              fill sizes="(max-width: 800px) 90vw, 360px"
-            />
-          </figure>
-          <figure className="widget-capture">
-            <Image
-              src="/screenshots/living_ocean_large.png"
-              alt="Real Deep Ocean Living Ocean large widget preview"
-              fill sizes="(max-width: 800px) 90vw, 360px"
+              sizes="(max-width: 800px) 92vw, 620px"
             />
           </figure>
           <p className="widget-capture-note">
-            Native widget previews from the current implementation. A
-            real-device Live Activity capture is still needed.
+            Repository-sourced widget concept sheet. Real installed widget and
+            Live Activity captures are still needed.
           </p>
         </Reveal>
       </div>

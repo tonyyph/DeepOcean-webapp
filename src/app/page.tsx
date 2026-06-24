@@ -6,6 +6,7 @@ import { FinalCTASection } from "@/components/sections/FinalCTASection";
 import { Footer } from "@/components/sections/Footer";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
+import { LovedByTravelersSection } from "@/components/sections/LovedByTravelersSection";
 import { PremiumSection } from "@/components/sections/PremiumSection";
 import { PrivacySection } from "@/components/sections/PrivacySection";
 import { ProblemSolutionSection } from "@/components/sections/ProblemSolutionSection";
@@ -24,6 +25,7 @@ export default function Home() {
       <HeroSection />
       <ProblemSolutionSection />
       <FeaturesSection />
+      <LovedByTravelersSection />
       <HowItWorksSection />
       <ScreensPreviewSection />
       <PremiumSection />

@@ -91,6 +91,48 @@ export const features = [
   },
 ] as const;
 
+export const featureStories = [
+  {
+    image: {
+      src: "/assets/ocean-portal-wide.png",
+      alt: "Deep Ocean widget artwork showing a whale below a sunlit ocean portal",
+      width: 1000,
+      height: 500,
+      position: "center",
+    },
+    category: "The ritual",
+    title: "Start with a destination, not another countdown.",
+    description:
+      "Choose a timed or open-ended dive and let focused minutes become a visible descent through the ocean.",
+  },
+  {
+    image: {
+      src: "/assets/living-jellyfish-square.png",
+      alt: "Deep Ocean Living Ocean widget artwork with a glowing jellyfish",
+      width: 900,
+      height: 900,
+      position: "center",
+    },
+    category: "The atmosphere",
+    title: "A living world that makes returning feel natural.",
+    description:
+      "Ocean zones, discoveries, restrained motion, ambience, and haptics turn focus into a repeatable calm ritual.",
+  },
+  {
+    image: {
+      src: "/screenshots/stats.png",
+      alt: "Real Deep Ocean Dive Analytics screen with focus totals and expedition history",
+      width: 1290,
+      height: 2796,
+      position: "center 18%",
+    },
+    category: "The record",
+    title: "See the attention you protected over time.",
+    description:
+      "Completed dives build authentic history through total focus, weekly rhythm, depth records, and recent expeditions.",
+  },
+] as const;
+
 export const steps = [
   {
     number: "01",

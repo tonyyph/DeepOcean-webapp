@@ -1,6 +1,6 @@
 # Deep Ocean landing assets audit
 
-Audit date: 2026-06-22
+Audit date: 2026-06-23
 
 Source of truth:
 
@@ -57,25 +57,51 @@ The following 1290×2796 images are real app captures and visually match the cur
 
 The current captures show the Prism Water theme and English UI. They contain sample local user data, which is acceptable as an authentic in-app state but must not be presented as universal product results.
 
-### Real widget captures available
+### Widget concept sheet available
 
-The following images show the implemented widget concepts in small, medium, and large system sizes:
+`public/screenshots/widget-portal.png` is a 1536×1024 repository asset showing
+the Ocean Portal, Diving Instrument, and Living Ocean concepts across small,
+medium, and large layouts. It is suitable as a concept overview, but it is not
+a real installed-device screenshot.
 
-- `public/screenshots/ocean_portal_small.png`
-- `public/screenshots/ocean_portal_medium.png`
-- `public/screenshots/ocean_portal_large.png`
-- `public/screenshots/diving_instrument_small.png`
-- `public/screenshots/diving_instrument_medium.png`
-- `public/screenshots/diving_instrument_large.png`
-- `public/screenshots/living_ocean_small.png`
-- `public/screenshots/living_ocean_medium.png`
-- `public/screenshots/living_ocean_large.png`
+The previously documented individual widget screenshots are not present in the
+current landing worktree and are not referenced by the landing page:
 
-They may be used as native-widget previews. Do not overlay invented timer values or controls on top of them.
+- `public/screenshots/ocean_portal_{small,medium,large}.png`
+- `public/screenshots/diving_instrument_{small,medium,large}.png`
+- `public/screenshots/living_ocean_{small,medium,large}.png`
+
+TODO: restore or recapture individual widget screenshots only if they can be
+traced to the current implementation. Until then, use the concept sheet with an
+explicit concept label and do not describe it as an installed-device capture.
 
 ### App Store screenshots
 
 No dedicated App Store or Google Play marketing screenshot set was found. The portrait captures above are raw app screenshots, not store-ready compositions.
+
+## Landing page asset mapping
+
+Every rendered image on the landing page currently resolves to a real file
+under `public/`.
+
+| Landing section | Rendered asset | Usage |
+| --- | --- | --- |
+| Navigation / brand | `public/assets/app-icon.png` | App icon |
+| Hero | `public/assets/ocean-portal-wide.png` | Full-width ocean artwork |
+| Hero | `public/screenshots/dive.png` | Real active-dive screen |
+| Feature story: ritual | `public/assets/ocean-portal-wide.png` | Verified widget artwork |
+| Feature story: atmosphere | `public/assets/living-jellyfish-square.png` | Verified widget artwork |
+| Feature story: record | `public/screenshots/stats.png` | Real Dive Analytics capture |
+| Loved by travelers preview | `public/screenshots/home.png` | Real Home capture, cropped within the card |
+| Loved by travelers preview | `public/assets/app-icon.png` | App icon |
+| Product preview gallery | `public/screenshots/home.png`, `dive.png`, `collection.png`, `stats.png`, `ai.png`, `premium.png` | Six real app captures |
+| Marine Guide | `public/screenshots/ai.png` | Real Marine Guide capture |
+| Widgets | `public/screenshots/widget-portal.png` | Repository-sourced widget concept sheet |
+| Analytics | `public/screenshots/stats.png` | Real Dive Analytics capture |
+| Metadata / social preview | `public/assets/ocean-portal-wide.png` | Repository artwork |
+
+No award badge is rendered in the floating app preview because no verified
+award/badge asset exists in the repository.
 
 ## Visual system verified from source
 
@@ -235,7 +261,9 @@ Those statements are not established by the current source.
 
 ## Screenshots needed
 
-The landing can launch using the six verified portrait captures and verified widget captures above. The following real captures should still be supplied to represent the complete product accurately:
+The landing can launch using the six verified portrait captures, verified
+widget artwork, and the labeled widget concept sheet above. The following real
+captures should still be supplied to represent the complete product accurately:
 
 1. Current onboarding welcome screen
 2. Onboarding goals screen
@@ -254,6 +282,6 @@ The landing can launch using the six verified portrait captures and verified wid
 15. Real installed Android widget screenshots for each size intended to ship
 16. Vietnamese Home or Dive screen for localization proof
 17. Final App Store and Google Play screenshot compositions
+18. Verified award or editorial badge, if the product earns one and the source asset is supplied
 
 Until those captures exist, the landing must use text-only descriptions for those states and must not draw substitute phone screens or simulated OS chrome.
-
