@@ -62,45 +62,57 @@ export const problemSolution = {
 export const features = [
   {
     icon: TimerReset,
-    title: "Timed and free dives",
-    description:
-      "Start with 15, 25, 45, or 60 minutes, choose a custom duration, or leave the timer open and surface when the work is done.",
-    tag: "Core focus",
+    title: { en: "Timed and free dives", vi: "Lặn có giờ và lặn tự do" },
+    description: {
+      en: "Start with 15, 25, 45, or 60 minutes, choose a custom duration, or leave the timer open and surface when the work is done.",
+      vi: "Bắt đầu với 15, 25, 45 hoặc 60 phút, chọn thời lượng tùy chỉnh, hoặc để bộ đếm giờ mở và trồi lên khi công việc hoàn tất.",
+    },
+    tag: { en: "Core focus", vi: "Tập trung cốt lõi" },
   },
   {
     icon: Layers3,
-    title: "Five depth zones",
-    description:
-      "Focused minutes move you from the Sunlight Zone through Twilight, Midnight, Abyssal, and the Hadal Trench.",
-    tag: "Progression",
+    title: { en: "Five depth zones", vi: "Năm vùng độ sâu" },
+    description: {
+      en: "Focused minutes move you from the Sunlight Zone through Twilight, Midnight, Abyssal, and the Hadal Trench.",
+      vi: "Những phút tập trung đưa bạn từ Vùng Ánh Sáng qua Vùng Chạng Vạng, Vùng Nửa Đêm, Vùng Vực Thẳm, và Rãnh Hadal.",
+    },
+    tag: { en: "Progression", vi: "Tiến trình" },
   },
   {
     icon: FishSymbol,
-    title: "Creatures, artifacts, and lore",
-    description:
-      "Deterministic discovery rolls reveal creatures and artifacts from the zone you reached, building an expedition log over time.",
-    tag: "Collection",
+    title: { en: "Creatures, artifacts, and lore", vi: "Sinh vật, cổ vật và truyền thuyết" },
+    description: {
+      en: "Deterministic discovery rolls reveal creatures and artifacts from the zone you reached, building an expedition log over time.",
+      vi: "Các lượt khám phá xác định sẵn hé lộ sinh vật và cổ vật từ vùng bạn đã đến, dần xây dựng một nhật ký thám hiểm theo thời gian.",
+    },
+    tag: { en: "Collection", vi: "Bộ sưu tập" },
   },
   {
     icon: Trophy,
-    title: "XP, levels, streaks, and titles",
-    description:
-      "Completed focus earns XP and can advance levels, daily streaks, zone unlocks, and milestone achievements.",
-    tag: "Motivation",
+    title: { en: "XP, levels, streaks, and titles", vi: "XP, cấp độ, chuỗi ngày và danh hiệu" },
+    description: {
+      en: "Completed focus earns XP and can advance levels, daily streaks, zone unlocks, and milestone achievements.",
+      vi: "Hoàn thành phiên tập trung nhận XP và có thể tăng cấp độ, duy trì chuỗi ngày, mở khóa vùng mới và đạt các cột mốc thành tựu.",
+    },
+    tag: { en: "Motivation", vi: "Động lực" },
   },
   {
     icon: ChartNoAxesCombined,
-    title: "Focus analytics",
-    description:
-      "Review total focus, maximum depth, weekly rhythm, recent expeditions, discoveries, and per-session reports.",
-    tag: "Reflection",
+    title: { en: "Focus analytics", vi: "Phân tích tập trung" },
+    description: {
+      en: "Review total focus, maximum depth, weekly rhythm, recent expeditions, discoveries, and per-session reports.",
+      vi: "Xem lại tổng thời gian tập trung, độ sâu tối đa, nhịp độ theo tuần, các chuyến thám hiểm gần đây, khám phá và báo cáo từng phiên.",
+    },
+    tag: { en: "Reflection", vi: "Nhìn lại" },
   },
   {
     icon: MoonStar,
-    title: "Calm sensory feedback",
-    description:
-      "Cinematic motion, underwater ambience, semantic haptics, reduced-motion support, and discovery alerts shape the ritual.",
-    tag: "Atmosphere",
+    title: { en: "Calm sensory feedback", vi: "Phản hồi giác quan êm dịu" },
+    description: {
+      en: "Cinematic motion, underwater ambience, semantic haptics, reduced-motion support, and discovery alerts shape the ritual.",
+      vi: "Chuyển động điện ảnh, không khí dưới nước, rung phản hồi có ngữ nghĩa, hỗ trợ giảm chuyển động và thông báo khám phá tạo nên nghi thức tập trung.",
+    },
+    tag: { en: "Atmosphere", vi: "Không khí" },
   },
 ] as const;
 
@@ -113,10 +125,15 @@ export const featureStories = [
       height: 500,
       position: "center",
     },
-    category: "The ritual",
-    title: "Start with a destination, not another countdown.",
-    description:
-      "Choose a timed or open-ended dive and let focused minutes become a visible descent through the ocean.",
+    category: { en: "The ritual", vi: "Nghi thức" },
+    title: {
+      en: "Start with a destination, not another countdown.",
+      vi: "Bắt đầu với một điểm đến, không phải thêm một bộ đếm ngược.",
+    },
+    description: {
+      en: "Choose a timed or open-ended dive and let focused minutes become a visible descent through the ocean.",
+      vi: "Chọn một lượt lặn có giờ hoặc không giới hạn và để những phút tập trung trở thành một hành trình đi xuống đại dương có thể nhìn thấy được.",
+    },
   },
   {
     image: {
@@ -126,10 +143,15 @@ export const featureStories = [
       height: 900,
       position: "center",
     },
-    category: "The atmosphere",
-    title: "A living world that makes returning feel natural.",
-    description:
-      "Ocean zones, discoveries, restrained motion, ambience, and haptics turn focus into a repeatable calm ritual.",
+    category: { en: "The atmosphere", vi: "Không khí" },
+    title: {
+      en: "A living world that makes returning feel natural.",
+      vi: "Một thế giới sống động khiến việc quay lại trở nên tự nhiên.",
+    },
+    description: {
+      en: "Ocean zones, discoveries, restrained motion, ambience, and haptics turn focus into a repeatable calm ritual.",
+      vi: "Các vùng đại dương, khám phá, chuyển động tiết chế, không khí và rung phản hồi biến sự tập trung thành một nghi thức bình yên có thể lặp lại.",
+    },
   },
   {
     image: {
@@ -139,10 +161,15 @@ export const featureStories = [
       height: 2796,
       position: "center 18%",
     },
-    category: "The record",
-    title: "See the attention you protected over time.",
-    description:
-      "Completed dives build authentic history through total focus, weekly rhythm, depth records, and recent expeditions.",
+    category: { en: "The record", vi: "Hồ sơ" },
+    title: {
+      en: "See the attention you protected over time.",
+      vi: "Xem lại sự tập trung bạn đã bảo vệ theo thời gian.",
+    },
+    description: {
+      en: "Completed dives build authentic history through total focus, weekly rhythm, depth records, and recent expeditions.",
+      vi: "Các lượt lặn đã hoàn thành xây dựng nên lịch sử chân thực qua tổng thời gian tập trung, nhịp độ theo tuần, kỷ lục độ sâu và các chuyến thám hiểm gần đây.",
+    },
   },
 ] as const;
 
