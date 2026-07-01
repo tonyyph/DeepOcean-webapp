@@ -176,72 +176,92 @@ export const featureStories = [
 export const steps = [
   {
     number: "01",
-    title: "Tell Deep Ocean what you want to improve",
-    description:
-      "Onboarding captures goals such as focus, consistency, stress reduction, learning, routines, and productivity.",
+    title: { en: "Tell Deep Ocean what you want to improve", vi: "Cho Deep Ocean biết điều bạn muốn cải thiện" },
+    description: {
+      en: "Onboarding captures goals such as focus, consistency, stress reduction, learning, routines, and productivity.",
+      vi: "Bước giới thiệu ghi nhận các mục tiêu như tập trung, duy trì đều đặn, giảm căng thẳng, học tập, thói quen và năng suất.",
+    },
   },
   {
     number: "02",
-    title: "Choose a focus rhythm",
-    description:
-      "Select a recommended workflow and a timed or open-ended dive that fits the energy you have today.",
+    title: { en: "Choose a focus rhythm", vi: "Chọn nhịp độ tập trung" },
+    description: {
+      en: "Select a recommended workflow and a timed or open-ended dive that fits the energy you have today.",
+      vi: "Chọn một quy trình được gợi ý và một lượt lặn có giờ hoặc không giới hạn phù hợp với năng lượng bạn có hôm nay.",
+    },
   },
   {
     number: "03",
-    title: "Descend while you work",
-    description:
-      "The live dive tracks elapsed focus, depth, zone, discoveries, pause state, and completion without crowding the screen.",
+    title: { en: "Descend while you work", vi: "Đi xuống trong khi bạn làm việc" },
+    description: {
+      en: "The live dive tracks elapsed focus, depth, zone, discoveries, pause state, and completion without crowding the screen.",
+      vi: "Lượt lặn trực tiếp theo dõi thời gian tập trung đã trôi qua, độ sâu, vùng, khám phá, trạng thái tạm dừng và hoàn thành mà không làm rối màn hình.",
+    },
   },
   {
     number: "04",
-    title: "Surface with a useful record",
-    description:
-      "A completed dive is saved with XP, depth, discoveries, level progress, streak updates, and an expedition report.",
+    title: { en: "Surface with a useful record", vi: "Trồi lên với một hồ sơ hữu ích" },
+    description: {
+      en: "A completed dive is saved with XP, depth, discoveries, level progress, streak updates, and an expedition report.",
+      vi: "Một lượt lặn hoàn thành được lưu lại cùng XP, độ sâu, khám phá, tiến trình cấp độ, cập nhật chuỗi ngày và báo cáo thám hiểm.",
+    },
   },
 ] as const;
 
 export const screenPreviews = [
   {
     id: "home",
-    label: "Home",
-    title: "A calm launch point",
-    description:
-      "See your last dive, preferred session, quick durations, depth progress, daily guidance, streak, dives, and level.",
+    label: { en: "Home", vi: "Trang chính" },
+    title: { en: "A calm launch point", vi: "Một điểm khởi đầu bình yên" },
+    description: {
+      en: "See your last dive, preferred session, quick durations, depth progress, daily guidance, streak, dives, and level.",
+      vi: "Xem lượt lặn gần nhất, phiên yêu thích, thời lượng nhanh, tiến trình độ sâu, hướng dẫn hằng ngày, chuỗi ngày, số lượt lặn và cấp độ.",
+    },
   },
   {
     id: "dive",
-    label: "Live dive",
-    title: "Attention, with almost no chrome",
-    description:
-      "One cinematic screen holds the progress ring, elapsed time, depth, zone, discoveries, pause, surface, and abort controls.",
+    label: { en: "Live dive", vi: "Lặn trực tiếp" },
+    title: { en: "Attention, with almost no chrome", vi: "Sự tập trung, gần như không giao diện thừa" },
+    description: {
+      en: "One cinematic screen holds the progress ring, elapsed time, depth, zone, discoveries, pause, surface, and abort controls.",
+      vi: "Một màn hình điện ảnh duy nhất chứa vòng tiến trình, thời gian đã trôi qua, độ sâu, vùng, khám phá, cùng các nút tạm dừng, trồi lên và hủy.",
+    },
   },
   {
     id: "collection",
-    label: "Expedition log",
-    title: "A collection earned through real focus",
-    description:
-      "Catalog creatures and artifacts by rarity, revisit sightings, and unlock deeper field-journal entries with Pro.",
+    label: { en: "Expedition log", vi: "Nhật ký thám hiểm" },
+    title: { en: "A collection earned through real focus", vi: "Một bộ sưu tập đạt được nhờ sự tập trung thật sự" },
+    description: {
+      en: "Catalog creatures and artifacts by rarity, revisit sightings, and unlock deeper field-journal entries with Pro.",
+      vi: "Phân loại sinh vật và cổ vật theo độ hiếm, xem lại các lần bắt gặp, và mở khóa các mục nhật ký thực địa chuyên sâu hơn với Pro.",
+    },
   },
   {
     id: "stats",
-    label: "Dive analytics",
-    title: "A history of protected attention",
-    description:
-      "Review total focus, maximum depth, a seven-day heatmap, recent expeditions, and individual session reports.",
+    label: { en: "Dive analytics", vi: "Phân tích lượt lặn" },
+    title: { en: "A history of protected attention", vi: "Một lịch sử của sự tập trung được bảo vệ" },
+    description: {
+      en: "Review total focus, maximum depth, a seven-day heatmap, recent expeditions, and individual session reports.",
+      vi: "Xem lại tổng thời gian tập trung, độ sâu tối đa, bản đồ nhiệt bảy ngày, các chuyến thám hiểm gần đây và báo cáo từng phiên.",
+    },
   },
   {
     id: "ai",
-    label: "Marine Guide",
-    title: "Guidance grounded in your app context",
-    description:
-      "Daily recommendations, motivation, session reflection, mood selection, and a cached or local fallback when hosted AI is unavailable.",
+    label: { en: "Marine Guide", vi: "Hướng Dẫn Viên Biển" },
+    title: { en: "Guidance grounded in your app context", vi: "Hướng dẫn dựa trên bối cảnh sử dụng ứng dụng của bạn" },
+    description: {
+      en: "Daily recommendations, motivation, session reflection, mood selection, and a cached or local fallback when hosted AI is unavailable.",
+      vi: "Gợi ý hằng ngày, động lực, nhìn lại phiên tập trung, chọn tâm trạng, và cơ chế dự phòng cục bộ hoặc lưu đệm khi AI trên máy chủ không khả dụng.",
+    },
   },
   {
     id: "premium",
-    label: "Profile & Pro",
-    title: "Settings and premium access in one place",
-    description:
-      "Manage the diver profile, XP, themes, language, reminders, motion, haptics, audio, and verified Pro entitlements.",
+    label: { en: "Profile & Pro", vi: "Hồ sơ & Pro" },
+    title: { en: "Settings and premium access in one place", vi: "Cài đặt và quyền truy cập cao cấp ở một nơi" },
+    description: {
+      en: "Manage the diver profile, XP, themes, language, reminders, motion, haptics, audio, and verified Pro entitlements.",
+      vi: "Quản lý hồ sơ thợ lặn, XP, giao diện, ngôn ngữ, nhắc nhở, chuyển động, rung phản hồi, âm thanh và quyền lợi Pro đã xác minh.",
+    },
   },
 ] as const;
 
