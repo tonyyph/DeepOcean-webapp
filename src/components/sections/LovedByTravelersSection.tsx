@@ -1,23 +1,23 @@
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { FloatingAppPreview } from "@/components/ui/FloatingAppPreview";
 import { SectionBadge } from "@/components/ui/SectionBadge";
+import { T } from "@/components/ui/T";
+import { travelersSectionCopy } from "@/content/landingContent";
 
 export function LovedByTravelersSection() {
   return (
     <section className="section travelers-section" aria-labelledby="travelers-title">
       <div className="section-inner travelers-grid">
         <AnimatedSection className="travelers-copy">
-          <SectionBadge>LOVED BY TRAVELERS</SectionBadge>
-          <h2 id="travelers-title">Less chaos, more trips.</h2>
+          <SectionBadge><T en={travelersSectionCopy.badge.en} vi={travelersSectionCopy.badge.vi} /></SectionBadge>
+          <h2 id="travelers-title"><T en={travelersSectionCopy.title.en} vi={travelersSectionCopy.title.vi} /></h2>
           <p>
-            Deep Ocean gives each focus session a clear beginning and a calm
-            destination—so there is less friction between deciding to focus and
-            actually starting.
+            <T en={travelersSectionCopy.body.en} vi={travelersSectionCopy.body.vi} />
           </p>
           <div className="travelers-proof" aria-label="Verified product capabilities">
-            <span>Timed & free dives</span>
-            <span>Five ocean zones</span>
-            <span>English & Vietnamese</span>
+            {travelersSectionCopy.proof.map((item) => (
+              <span key={item.en}><T en={item.en} vi={item.vi} /></span>
+            ))}
           </div>
         </AnimatedSection>
         <AnimatedSection className="travelers-preview" delay={0.12}>

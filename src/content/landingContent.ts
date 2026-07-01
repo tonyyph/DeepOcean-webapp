@@ -475,4 +475,18 @@ export const privacyPoints = [
   },
 ] as const;
 
+export const travelersSectionCopy = {
+  badge: { en: "LOVED BY TRAVELERS", vi: "ĐƯỢC NGƯỜI DÙNG YÊU THÍCH" },
+  title: { en: "Less chaos, more trips.", vi: "Ít hỗn loạn hơn, nhiều chuyến lặn hơn." },
+  body: {
+    en: "Deep Ocean gives each focus session a clear beginning and a calm destination—so there is less friction between deciding to focus and actually starting.",
+    vi: "Deep Ocean mang đến cho mỗi phiên tập trung một điểm bắt đầu rõ ràng và một điểm đến bình yên — để giảm bớt trở ngại giữa việc quyết định tập trung và thật sự bắt đầu.",
+  },
+  proof: [
+    { en: "Timed & free dives", vi: "Lặn có giờ & lặn tự do" },
+    { en: "Five ocean zones", vi: "Năm vùng đại dương" },
+    { en: "English & Vietnamese", vi: "Tiếng Anh & Tiếng Việt" },
+  ],
+} as const;
+
 export const auxiliaryIcons = { BellRing };

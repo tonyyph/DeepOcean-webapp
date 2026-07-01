@@ -1,5 +1,7 @@
+import type { ReactNode } from "react";
+
 type SectionBadgeProps = {
-  children: string;
+  children: ReactNode;
 };
 
 export function SectionBadge({ children }: SectionBadgeProps) {
