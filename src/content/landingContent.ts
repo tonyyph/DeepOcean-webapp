@@ -268,48 +268,62 @@ export const screenPreviews = [
 export const premiumBenefits = [
   {
     icon: Palette,
-    title: "Seven premium themes",
-    description:
-      "App-wide visual identities with distinct palettes, typography, particles, gradients, and ambient effects.",
+    title: { en: "Seven premium themes", vi: "Bảy giao diện cao cấp" },
+    description: {
+      en: "App-wide visual identities with distinct palettes, typography, particles, gradients, and ambient effects.",
+      vi: "Bộ nhận diện hình ảnh toàn ứng dụng với bảng màu, kiểu chữ, hiệu ứng hạt, gradient và hiệu ứng không khí riêng biệt.",
+    },
   },
   {
     icon: BrainCircuit,
-    title: "Deep AI insights",
-    description:
-      "Unlock personal trend analysis, mood-correlated patterns, focus plans, and a guided breathing ritual.",
+    title: { en: "Deep AI insights", vi: "Phân tích sâu từ AI" },
+    description: {
+      en: "Unlock personal trend analysis, mood-correlated patterns, focus plans, and a guided breathing ritual.",
+      vi: "Mở khóa phân tích xu hướng cá nhân, các mẫu hình liên quan đến tâm trạng, kế hoạch tập trung và một nghi thức hít thở có hướng dẫn.",
+    },
   },
   {
     icon: BookOpen,
-    title: "Full field journals",
-    description:
-      "Read the folklore, theories, and sealed expedition notes behind discovered creatures and artifacts.",
+    title: { en: "Full field journals", vi: "Nhật ký thực địa đầy đủ" },
+    description: {
+      en: "Read the folklore, theories, and sealed expedition notes behind discovered creatures and artifacts.",
+      vi: "Đọc truyền thuyết, giả thuyết và ghi chú thám hiểm được niêm phong đằng sau các sinh vật và cổ vật đã khám phá.",
+    },
   },
   {
     icon: Gem,
-    title: "A more personal ocean",
-    description:
-      "Pro elevates the tab experience and lets the visual system feel deliberately yours while the core timer remains accessible.",
+    title: { en: "A more personal ocean", vi: "Một đại dương mang dấu ấn riêng" },
+    description: {
+      en: "Pro elevates the tab experience and lets the visual system feel deliberately yours while the core timer remains accessible.",
+      vi: "Pro nâng tầm trải nghiệm các tab và giúp hệ thống hình ảnh mang đậm dấu ấn cá nhân, trong khi bộ đếm giờ cốt lõi vẫn luôn sẵn sàng.",
+    },
   },
 ] as const;
 
 export const intelligence = [
   {
     icon: BrainCircuit,
-    title: "Context-aware companion",
-    description:
-      "Guidance can use your level, streak, mood, unlocked zones, achievements, and recent sessions.",
+    title: { en: "Context-aware companion", vi: "Người bạn đồng hành hiểu bối cảnh" },
+    description: {
+      en: "Guidance can use your level, streak, mood, unlocked zones, achievements, and recent sessions.",
+      vi: "Hướng dẫn có thể dựa trên cấp độ, chuỗi ngày, tâm trạng, vùng đã mở khóa, thành tựu và các phiên gần đây của bạn.",
+    },
   },
   {
     icon: Compass,
-    title: "Personal onboarding plan",
-    description:
-      "Your selected goals shape recommended items and a starting workflow before the first dive.",
+    title: { en: "Personal onboarding plan", vi: "Kế hoạch giới thiệu cá nhân hóa" },
+    description: {
+      en: "Your selected goals shape recommended items and a starting workflow before the first dive.",
+      vi: "Các mục tiêu bạn chọn định hình những gợi ý và quy trình khởi đầu trước lượt lặn đầu tiên.",
+    },
   },
   {
     icon: Sparkles,
-    title: "Graceful offline fallback",
-    description:
-      "If a hosted AI provider is unavailable, a deterministic local guide still produces data-driven recommendations.",
+    title: { en: "Graceful offline fallback", vi: "Cơ chế dự phòng ngoại tuyến mượt mà" },
+    description: {
+      en: "If a hosted AI provider is unavailable, a deterministic local guide still produces data-driven recommendations.",
+      vi: "Nếu nhà cung cấp AI trên máy chủ không khả dụng, một hướng dẫn cục bộ xác định sẵn vẫn tạo ra gợi ý dựa trên dữ liệu.",
+    },
   },
 ] as const;
 
