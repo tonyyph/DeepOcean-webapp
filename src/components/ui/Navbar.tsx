@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { navItems, siteLinks } from "@/content/landingContent";
 import { LangToggle } from "@/components/ui/LangToggle";
+import { T } from "@/components/ui/T";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -27,14 +28,14 @@ export default function Navbar() {
       <div className={`nav-links${open ? " nav-links-open" : ""}`}>
         {navItems.map((link) => (
           <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
-            {link.label}
+            <T en={link.label.en} vi={link.label.vi} />
           </a>
         ))}
         <LangToggle />
       </div>
 
       <a className="nav-cta" href={siteLinks.primaryCta}>
-        Coming soon
+        <T en="Coming soon" vi="Sắp ra mắt" />
       </a>
 
       <button

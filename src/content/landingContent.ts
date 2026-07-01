@@ -27,11 +27,11 @@ export const siteLinks = {
 } as const;
 
 export const navItems = [
-  { label: "Why Deep Ocean", href: "#problem" },
-  { label: "Features", href: "#features" },
-  { label: "Experience", href: "#screens" },
-  { label: "Pro", href: "#premium" },
-  { label: "Privacy", href: "#privacy" },
+  { label: { en: "Why Deep Ocean", vi: "Vì sao chọn Deep Ocean" }, href: "#problem" },
+  { label: { en: "Features", vi: "Tính năng" }, href: "#features" },
+  { label: { en: "Experience", vi: "Trải nghiệm" }, href: "#screens" },
+  { label: { en: "Pro", vi: "Pro" }, href: "#premium" },
+  { label: { en: "Privacy", vi: "Quyền riêng tư" }, href: "#privacy" },
 ] as const;
 
 export const problemSolution = {
