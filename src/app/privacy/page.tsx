@@ -4,6 +4,8 @@ import Link from "next/link"
 import { Home } from "lucide-react"
 import { privacyPage } from "@/content/legalContent"
 import { landingCssVariables } from "@/lib/landingTheme"
+import { T } from "@/components/ui/T"
+import { LangToggle } from "@/components/ui/LangToggle"
 
 export const metadata: Metadata = {
   title: "Privacy Policy — Deep Ocean",
@@ -49,17 +51,19 @@ export default function PrivacyPage() {
           <Image src="/assets/app-icon.png" alt="" width={36} height={36} />
           <span>Deep Ocean</span>
         </Link>
-        <Link className="support-home-link" href="/">
-          <Home size={16} />
-          Home
-        </Link>
+        <div className="support-nav-actions">
+          <LangToggle />
+          <Link className="support-home-link" href="/">
+            <Home size={16} />
+            <T en="Home" vi="Trang chủ" />
+          </Link>
+        </div>
       </header>
 
       <section className="legal-hero">
-        <p className="eyebrow">{privacyPage.eyebrow.en} / {privacyPage.eyebrow.vi}</p>
-        <h1>{privacyPage.title.en}</h1>
-        <p className="legal-hero-vi">{privacyPage.title.vi}</p>
-        <p className="legal-updated">Last updated: {privacyPage.updatedAt}</p>
+        <p className="eyebrow"><T en={privacyPage.eyebrow.en} vi={privacyPage.eyebrow.vi} /></p>
+        <h1><T en={privacyPage.title.en} vi={privacyPage.title.vi} /></h1>
+        <p className="legal-updated"><T en="Last updated:" vi="Cập nhật lần cuối:" /> {privacyPage.updatedAt}</p>
       </section>
 
       <div className="legal-body-wrapper">
@@ -69,7 +73,7 @@ export default function PrivacyPage() {
               <span className="legal-toc-num">
                 {String(i + 1).padStart(2, "0")}
               </span>
-              {section.heading.en}
+              <T en={section.heading.en} vi={section.heading.vi} />
             </a>
           ))}
         </nav>
@@ -78,20 +82,11 @@ export default function PrivacyPage() {
           {privacyPage.sections.map((section) => (
             <section id={section.id} key={section.id} className="legal-section">
               <div className="legal-section-heading">
-                <h2>{section.heading.en}</h2>
-                <p className="legal-section-heading-vi">{section.heading.vi}</p>
+                <h2><T en={section.heading.en} vi={section.heading.vi} /></h2>
               </div>
-              <div className="legal-en">
-                {section.body.en.map((paragraph, i) => (
-                  <p key={i}>{paragraph}</p>
-                ))}
-              </div>
-              <div className="legal-divider" aria-hidden />
-              <div className="legal-vi">
-                {section.body.vi.map((paragraph, i) => (
-                  <p key={i}>{paragraph}</p>
-                ))}
-              </div>
+              {section.body.en.map((paragraph, i) => (
+                <p key={i}><T en={paragraph} vi={section.body.vi[i]} /></p>
+              ))}
             </section>
           ))}
         </div>
@@ -100,9 +95,9 @@ export default function PrivacyPage() {
       <footer className="legal-footer">
         <p>© {new Date().getFullYear()} Deep Ocean</p>
         <nav className="legal-footer-links" aria-label="Legal page links">
-          <Link href="/">Home</Link>
-          <Link href="/terms">Terms of Service</Link>
-          <Link href="/support">Support</Link>
+          <Link href="/"><T en="Home" vi="Trang chủ" /></Link>
+          <Link href="/terms"><T en="Terms of Service" vi="Điều khoản dịch vụ" /></Link>
+          <Link href="/support"><T en="Support" vi="Hỗ trợ" /></Link>
         </nav>
       </footer>
     </main>
