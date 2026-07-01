@@ -36,14 +36,26 @@ export const navItems = [
 
 export const problemSolution = {
   problem: {
-    eyebrow: "The surface problem",
-    title: "Most timers measure attention. They do not make it easier to return.",
-    body: "A plain countdown can feel like another demand. Deep Ocean gives focus a calm sense of place, visible progression, and a reason to protect the next few minutes.",
+    eyebrow: { en: "The surface problem", vi: "Vấn đề trên mặt nước" },
+    title: {
+      en: "Most timers measure attention. They do not make it easier to return.",
+      vi: "Hầu hết bộ đếm giờ chỉ đo sự tập trung. Chúng không giúp bạn dễ quay lại hơn.",
+    },
+    body: {
+      en: "A plain countdown can feel like another demand. Deep Ocean gives focus a calm sense of place, visible progression, and a reason to protect the next few minutes.",
+      vi: "Một bộ đếm ngược đơn thuần có thể giống thêm một áp lực khác. Deep Ocean mang lại cho sự tập trung một cảm giác về nơi chốn bình yên, tiến trình rõ ràng và một lý do để bảo vệ vài phút tiếp theo.",
+    },
   },
   solution: {
-    eyebrow: "A quieter system",
-    title: "Every session becomes a dive with a beginning, a descent, and something worth surfacing with.",
-    body: "Choose a duration or free dive, watch time become depth, discover ocean life, and build a personal record of focused work without turning productivity into noise.",
+    eyebrow: { en: "A quieter system", vi: "Một hệ thống tĩnh lặng hơn" },
+    title: {
+      en: "Every session becomes a dive with a beginning, a descent, and something worth surfacing with.",
+      vi: "Mỗi phiên tập trung trở thành một lượt lặn có điểm bắt đầu, một hành trình đi xuống, và điều gì đó đáng để mang lên khi trồi lên mặt nước.",
+    },
+    body: {
+      en: "Choose a duration or free dive, watch time become depth, discover ocean life, and build a personal record of focused work without turning productivity into noise.",
+      vi: "Chọn thời lượng hoặc lặn tự do, xem thời gian biến thành độ sâu, khám phá sinh vật đại dương, và xây dựng một hồ sơ cá nhân về công việc tập trung mà không biến năng suất thành áp lực ồn ào.",
+    },
   },
 } as const;
 

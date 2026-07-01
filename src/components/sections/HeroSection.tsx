@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowDown, ArrowRight, Check } from "lucide-react";
 import { AppScreenshot } from "@/components/ui/AppScreenshot";
 import { Reveal } from "@/components/ui/Reveal";
+import { T } from "@/components/ui/T";
 import { siteLinks } from "@/content/landingContent";
 
 export function HeroSection() {
@@ -21,31 +22,32 @@ export function HeroSection() {
         <Reveal className="hero-copy">
           <div className="hero-brand-line">
             <Image src="/assets/app-icon.png" alt="" width={38} height={38} />
-            <span>Focus dives for iPhone & Android</span>
+            <span><T en="Focus dives for iPhone & Android" vi="Lặn tập trung cho iPhone & Android" /></span>
           </div>
           <h1>
-            Focus deeper.
-            <span>Surface calmer.</span>
+            <T en="Focus deeper." vi="Tập trung sâu hơn." />
+            <span><T en="Surface calmer." vi="Trồi lên bình yên hơn." /></span>
           </h1>
           <p className="hero-lede">
-            Deep Ocean turns each focus session into an underwater dive—where
-            uninterrupted minutes become depth, discoveries, and a lasting
-            record of the attention you protected.
+            <T
+              en="Deep Ocean turns each focus session into an underwater dive—where uninterrupted minutes become depth, discoveries, and a lasting record of the attention you protected."
+              vi="Deep Ocean biến mỗi phiên tập trung thành một lượt lặn dưới nước — nơi những phút giây không bị gián đoạn trở thành độ sâu, khám phá, và một hồ sơ lâu dài về sự tập trung bạn đã bảo vệ."
+            />
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href={siteLinks.primaryCta}>
-              Get launch updates
+              <T en="Get launch updates" vi="Nhận cập nhật ra mắt" />
               <ArrowRight size={18} />
             </a>
             <a className="button button-secondary" href={siteLinks.secondaryCta}>
-              Explore the dive
+              <T en="Explore the dive" vi="Khám phá lượt lặn" />
               <ArrowDown size={17} />
             </a>
           </div>
           <div className="hero-proof">
-            <span><Check size={14} /> Timed or free dives</span>
-            <span><Check size={14} /> Core focus loop stays accessible</span>
-            <span><Check size={14} /> English & Vietnamese app UI</span>
+            <span><Check size={14} /> <T en="Timed or free dives" vi="Lặn có giờ hoặc lặn tự do" /></span>
+            <span><Check size={14} /> <T en="Core focus loop stays accessible" vi="Vòng lặp tập trung cốt lõi luôn có thể sử dụng được" /></span>
+            <span><Check size={14} /> <T en="English & Vietnamese app UI" vi="Giao diện ứng dụng tiếng Anh & tiếng Việt" /></span>
           </div>
         </Reveal>
 
