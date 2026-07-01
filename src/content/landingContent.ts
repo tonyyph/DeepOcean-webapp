@@ -366,34 +366,46 @@ export const progressFeatures = [
 
 export const faqs = [
   {
-    question: "What is a focus dive?",
-    answer:
-      "It is a focus session represented as an underwater descent. Time becomes depth, deeper durations reach new zones, and completed sessions can produce discoveries and progression.",
+    question: { en: "What is a focus dive?", vi: "Lượt lặn tập trung là gì?" },
+    answer: {
+      en: "It is a focus session represented as an underwater descent. Time becomes depth, deeper durations reach new zones, and completed sessions can produce discoveries and progression.",
+      vi: "Đó là một phiên tập trung được thể hiện dưới dạng một hành trình lặn xuống đại dương. Thời gian trở thành độ sâu, thời lượng càng dài càng chạm tới vùng mới, và các phiên hoàn thành có thể tạo ra khám phá và tiến trình.",
+    },
   },
   {
-    question: "Do I have to use a fixed timer?",
-    answer:
-      "No. Deep Ocean includes quick and custom timed sessions plus a free dive with no fixed end time.",
+    question: { en: "Do I have to use a fixed timer?", vi: "Tôi có bắt buộc dùng bộ đếm giờ cố định không?" },
+    answer: {
+      en: "No. Deep Ocean includes quick and custom timed sessions plus a free dive with no fixed end time.",
+      vi: "Không. Deep Ocean có các phiên nhanh và tùy chỉnh theo giờ, cùng với chế độ lặn tự do không có thời điểm kết thúc cố định.",
+    },
   },
   {
-    question: "What stays available without Pro?",
-    answer:
-      "The core dive timer, XP, streaks, basic expedition history, collection loop, and standard guidance remain part of the core experience. Pro adds premium themes, deeper AI insights, and full field journals.",
+    question: { en: "What stays available without Pro?", vi: "Điều gì vẫn khả dụng khi không dùng Pro?" },
+    answer: {
+      en: "The core dive timer, XP, streaks, basic expedition history, collection loop, and standard guidance remain part of the core experience. Pro adds premium themes, deeper AI insights, and full field journals.",
+      vi: "Bộ đếm giờ lặn cốt lõi, XP, chuỗi ngày, lịch sử thám hiểm cơ bản, vòng lặp bộ sưu tập và hướng dẫn tiêu chuẩn vẫn là một phần của trải nghiệm cốt lõi. Pro bổ sung giao diện cao cấp, phân tích AI chuyên sâu hơn và nhật ký thực địa đầy đủ.",
+    },
   },
   {
-    question: "Does the AI companion require an internet connection?",
-    answer:
-      "Hosted AI features need a configured provider and connectivity, but the app includes cached and local fallback behavior so basic guidance does not disappear.",
+    question: { en: "Does the AI companion require an internet connection?", vi: "Người bạn đồng hành AI có cần kết nối internet không?" },
+    answer: {
+      en: "Hosted AI features need a configured provider and connectivity, but the app includes cached and local fallback behavior so basic guidance does not disappear.",
+      vi: "Các tính năng AI trên máy chủ cần một nhà cung cấp đã cấu hình và kết nối mạng, nhưng ứng dụng có cơ chế lưu đệm và dự phòng cục bộ để hướng dẫn cơ bản không biến mất.",
+    },
   },
   {
-    question: "Can I keep track of a dive outside the app?",
-    answer:
-      "The implementation includes home-screen widgets, timed-dive completion notifications, an Android active-dive notification, and iPhone Live Activity support. Final device and store QA is still required before release.",
+    question: { en: "Can I keep track of a dive outside the app?", vi: "Tôi có thể theo dõi lượt lặn bên ngoài ứng dụng không?" },
+    answer: {
+      en: "The implementation includes home-screen widgets, timed-dive completion notifications, an Android active-dive notification, and iPhone Live Activity support. Final device and store QA is still required before release.",
+      vi: "Phiên bản hiện tại có widget màn hình chính, thông báo hoàn thành lượt lặn có giờ, thông báo lượt lặn đang diễn ra trên Android, và hỗ trợ Live Activity trên iPhone. Vẫn cần kiểm thử thiết bị và cửa hàng ứng dụng lần cuối trước khi phát hành.",
+    },
   },
   {
-    question: "Is Deep Ocean available now?",
-    answer:
-      "Store availability links have not been provided for this landing page yet. The current calls to action are clearly marked as beta or store-link placeholders.",
+    question: { en: "Is Deep Ocean available now?", vi: "Deep Ocean đã có sẵn chưa?" },
+    answer: {
+      en: "Store availability links have not been provided for this landing page yet. The current calls to action are clearly marked as beta or store-link placeholders.",
+      vi: "Liên kết cửa hàng ứng dụng chưa được cung cấp cho trang này. Các nút kêu gọi hành động hiện tại được đánh dấu rõ là bản beta hoặc chỗ giữ chỗ cho liên kết cửa hàng.",
+    },
   },
 ] as const;
 
