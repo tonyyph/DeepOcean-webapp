@@ -1,33 +1,16 @@
-import { CloudOff, Database, ShieldCheck } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-
-const privacyPoints = [
-  {
-    icon: Database,
-    title: "Core records stay on device",
-    body: "Dive history, profile progress, collection, mood, settings, personalization, achievements, and cached guidance are persisted locally with MMKV.",
-  },
-  {
-    icon: CloudOff,
-    title: "Guidance degrades gracefully",
-    body: "When a hosted AI provider is unavailable, Deep Ocean can use a cached response or context-derived offline guidance instead of breaking the core experience.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Clear network boundaries",
-    body: "Optional AI providers, RevenueCat purchases, and app updates can use network services. Deep Ocean does not claim that every feature is fully offline.",
-  },
-] as const;
+import { T } from "@/components/ui/T";
+import { privacyPoints, privacySectionCopy } from "@/content/landingContent";
 
 export function PrivacySection() {
   return (
     <section id="privacy" className="section privacy-section">
       <div className="section-inner privacy-grid">
         <SectionHeading
-          eyebrow="Privacy & local-first"
-          title="Your focus history begins on your device."
-          description="The current architecture keeps the core product record local while clearly separating the few features that may call configured services."
+          eyebrow={<T en={privacySectionCopy.eyebrow.en} vi={privacySectionCopy.eyebrow.vi} />}
+          title={<T en={privacySectionCopy.title.en} vi={privacySectionCopy.title.vi} />}
+          description={<T en={privacySectionCopy.description.en} vi={privacySectionCopy.description.vi} />}
         />
         <div className="privacy-list">
           {privacyPoints.map((point, index) => {
@@ -36,12 +19,12 @@ export function PrivacySection() {
               <Reveal
                 className="privacy-card"
                 delay={index * 0.05}
-                key={point.title}
+                key={point.title.en}
               >
                 <span><Icon size={20} /></span>
                 <div>
-                  <h3>{point.title}</h3>
-                  <p>{point.body}</p>
+                  <h3><T en={point.title.en} vi={point.title.vi} /></h3>
+                  <p><T en={point.body.en} vi={point.body.vi} /></p>
                 </div>
               </Reveal>
             );

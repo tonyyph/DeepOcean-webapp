@@ -3,7 +3,9 @@ import {
   BookOpen,
   BrainCircuit,
   ChartNoAxesCombined,
+  CloudOff,
   Compass,
+  Database,
   FishSymbol,
   Gauge,
   Gem,
@@ -12,6 +14,7 @@ import {
   MoonStar,
   Palette,
   Sparkles,
+  ShieldCheck,
   TimerReset,
   Trophy,
   Waves,
@@ -395,10 +398,10 @@ export const faqs = [
 ] as const;
 
 export const widgetHighlights = [
-  "Start, pause, or resume a focus session",
-  "Open the AI companion or daily progress",
-  "See streak, focus targets, zone, depth, and discoveries",
-  "Follow an active timed dive with iPhone Live Activities",
+  { en: "Start, pause, or resume a focus session", vi: "Bắt đầu, tạm dừng hoặc tiếp tục một phiên tập trung" },
+  { en: "Open the AI companion or daily progress", vi: "Mở người bạn đồng hành AI hoặc tiến trình hằng ngày" },
+  { en: "See streak, focus targets, zone, depth, and discoveries", vi: "Xem chuỗi ngày, mục tiêu tập trung, vùng, độ sâu và khám phá" },
+  { en: "Follow an active timed dive with iPhone Live Activities", vi: "Theo dõi lượt lặn có giờ đang diễn ra bằng Live Activities trên iPhone" },
 ] as const;
 
 export const footerGroups = [
@@ -418,6 +421,45 @@ export const footerGroups = [
       { label: "Support", href: siteLinks.support },
       { label: "Email support", href: siteLinks.contact },
     ],
+  },
+] as const;
+
+export const privacySectionCopy = {
+  eyebrow: { en: "Privacy & local-first", vi: "Quyền riêng tư & ưu tiên cục bộ" },
+  title: {
+    en: "Your focus history begins on your device.",
+    vi: "Lịch sử tập trung của bạn bắt đầu ngay trên thiết bị.",
+  },
+  description: {
+    en: "The current architecture keeps the core product record local while clearly separating the few features that may call configured services.",
+    vi: "Kiến trúc hiện tại giữ hồ sơ sản phẩm cốt lõi ở cục bộ, đồng thời tách biệt rõ ràng số ít tính năng có thể gọi đến các dịch vụ đã cấu hình.",
+  },
+} as const;
+
+export const privacyPoints = [
+  {
+    icon: Database,
+    title: { en: "Core records stay on device", vi: "Hồ sơ cốt lõi luôn ở trên thiết bị" },
+    body: {
+      en: "Dive history, profile progress, collection, mood, settings, personalization, achievements, and cached guidance are persisted locally with MMKV.",
+      vi: "Lịch sử lặn, tiến trình hồ sơ, bộ sưu tập, tâm trạng, cài đặt, cá nhân hóa, thành tựu và hướng dẫn được lưu đệm đều được lưu trữ cục bộ bằng MMKV.",
+    },
+  },
+  {
+    icon: CloudOff,
+    title: { en: "Guidance degrades gracefully", vi: "Hướng dẫn suy giảm một cách mượt mà" },
+    body: {
+      en: "When a hosted AI provider is unavailable, Deep Ocean can use a cached response or context-derived offline guidance instead of breaking the core experience.",
+      vi: "Khi nhà cung cấp AI trên máy chủ không khả dụng, Deep Ocean có thể dùng phản hồi đã lưu đệm hoặc hướng dẫn ngoại tuyến suy ra từ bối cảnh, thay vì làm gián đoạn trải nghiệm cốt lõi.",
+    },
+  },
+  {
+    icon: ShieldCheck,
+    title: { en: "Clear network boundaries", vi: "Ranh giới mạng rõ ràng" },
+    body: {
+      en: "Optional AI providers, RevenueCat purchases, and app updates can use network services. Deep Ocean does not claim that every feature is fully offline.",
+      vi: "Nhà cung cấp AI tùy chọn, giao dịch mua qua RevenueCat và cập nhật ứng dụng có thể sử dụng dịch vụ mạng. Deep Ocean không khẳng định mọi tính năng đều hoàn toàn ngoại tuyến.",
+    },
   },
 ] as const;
 
