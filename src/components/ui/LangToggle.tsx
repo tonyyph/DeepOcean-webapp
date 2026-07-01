@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const STORAGE_KEY = "deepocean-locale";
 
@@ -14,7 +14,11 @@ function readLocale(): Locale {
 }
 
 export function LangToggle() {
-  const [locale, setLocale] = useState<Locale>(readLocale);
+  const [locale, setLocale] = useState<Locale>("en");
+
+  useEffect(() => {
+    setLocale(readLocale());
+  }, []);
 
   const toggle = useCallback(() => {
     const next: Locale = locale === "en" ? "vi" : "en";
