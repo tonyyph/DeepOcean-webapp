@@ -418,20 +418,20 @@ export const widgetHighlights = [
 
 export const footerGroups = [
   {
-    title: "Product",
+    title: { en: "Product", vi: "Sản phẩm" },
     links: [
-      { label: "Features", href: "#features" },
-      { label: "Experience", href: "#screens" },
-      { label: "Deep Ocean Pro", href: "#premium" },
+      { label: { en: "Features", vi: "Tính năng" }, href: "#features" },
+      { label: { en: "Experience", vi: "Trải nghiệm" }, href: "#screens" },
+      { label: { en: "Deep Ocean Pro", vi: "Deep Ocean Pro" }, href: "#premium" },
     ],
   },
   {
-    title: "Company",
+    title: { en: "Company", vi: "Công ty" },
     links: [
-      { label: "Privacy Policy", href: siteLinks.privacy },
-      { label: "Terms of Service", href: siteLinks.terms },
-      { label: "Support", href: siteLinks.support },
-      { label: "Email support", href: siteLinks.contact },
+      { label: { en: "Privacy Policy", vi: "Chính sách quyền riêng tư" }, href: siteLinks.privacy },
+      { label: { en: "Terms of Service", vi: "Điều khoản dịch vụ" }, href: siteLinks.terms },
+      { label: { en: "Support", vi: "Hỗ trợ" }, href: siteLinks.support },
+      { label: { en: "Email support", vi: "Email hỗ trợ" }, href: siteLinks.contact },
     ],
   },
 ] as const;
