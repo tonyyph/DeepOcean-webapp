@@ -20,9 +20,10 @@ import {
 export const siteLinks = {
   primaryCta: "#final-cta",
   secondaryCta: "#how-it-works",
-  privacy: "#privacy",
-  terms: "#launch-notes",
-  contact: "#contact-placeholder",
+  privacy: "/privacy",
+  terms: "/terms",
+  support: "/support",
+  contact: "mailto:support@deepocean.io.vn",
 } as const;
 
 export const navItems = [
@@ -330,9 +331,10 @@ export const footerGroups = [
   {
     title: "Company",
     links: [
-      { label: "Privacy overview", href: siteLinks.privacy },
-      { label: "Launch notes", href: siteLinks.terms },
-      { label: "Contact pending", href: siteLinks.contact },
+      { label: "Privacy Policy", href: siteLinks.privacy },
+      { label: "Terms of Service", href: siteLinks.terms },
+      { label: "Support", href: siteLinks.support },
+      { label: "Email support", href: siteLinks.contact },
     ],
   },
 ] as const;

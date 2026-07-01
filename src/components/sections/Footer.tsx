@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { footerGroups } from "@/content/landingContent";
+import { footerGroups, siteLinks } from "@/content/landingContent";
 
 export function Footer() {
   return (
@@ -21,11 +21,9 @@ export function Footer() {
           </div>
         ))}
       </div>
-      <div id="launch-notes" className="footer-bottom">
+      <div className="footer-bottom">
         <span>© {new Date().getFullYear()} Deep Ocean</span>
-        <span id="contact-placeholder">
-          Privacy policy, terms, contact, and store listing URLs pending.
-        </span>
+        <a id="contact-placeholder" href={siteLinks.support}>Support and contact</a>
       </div>
     </footer>
   );
