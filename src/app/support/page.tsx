@@ -3,60 +3,26 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowUpRight,
-  CreditCard,
   Home,
   Mail,
   MessageCircle,
   RefreshCw,
-  ShieldCheck,
-  Smartphone,
-  TimerReset,
 } from "lucide-react";
 import { siteLinks } from "@/content/landingContent";
+import {
+  beforeEmailingHeading,
+  checklistItems,
+  finalCopy,
+  heroCopy,
+  quickAnswers,
+  quickAnswersHeading,
+  supportEmail,
+  supportTopics,
+  topicsHeading,
+} from "@/content/supportContent";
 import { landingCssVariables } from "@/lib/landingTheme";
-
-const supportEmail = "support@deepocean.io.vn";
-
-const supportTopics = [
-  {
-    icon: TimerReset,
-    title: "Focus dives and session history",
-    body: "Get help with timed dives, free dives, saved expedition records, XP, streaks, and progress visibility.",
-  },
-  {
-    icon: Smartphone,
-    title: "Widgets and Live Activities",
-    body: "Report issues with home-screen widgets, active dive status, notifications, or iPhone Live Activities.",
-  },
-  {
-    icon: CreditCard,
-    title: "Deep Ocean Pro",
-    body: "Ask about premium themes, subscription access, purchase restore behavior, or App Store billing questions.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Privacy and data",
-    body: "Request help with local app data, account-related questions, privacy concerns, or data deletion guidance.",
-  },
-] as const;
-
-const quickAnswers = [
-  {
-    question: "How fast will support reply?",
-    answer:
-      "Most support messages are reviewed within 2 business days. Include your device model, iOS version, app version, and screenshots when possible.",
-  },
-  {
-    question: "How do I restore a purchase?",
-    answer:
-      "Open Deep Ocean, go to Profile or Pro settings, then use Restore Purchases. If access is still missing, email support with the Apple ID purchase region and receipt details from Apple.",
-  },
-  {
-    question: "Can I request data deletion?",
-    answer:
-      "Yes. Email support with the subject Data deletion request. Deep Ocean is designed around local-first focus data, and support will guide you through any app-side deletion steps.",
-  },
-] as const;
+import { LangToggle } from "@/components/ui/LangToggle";
+import { T } from "@/components/ui/T";
 
 export const metadata: Metadata = {
   title: "Deep Ocean Support",
@@ -102,33 +68,34 @@ export default function SupportPage() {
           <Image src="/assets/app-icon.png" alt="" width={36} height={36} />
           <span>Deep Ocean</span>
         </Link>
-        <Link className="support-home-link" href="/">
-          <Home size={16} />
-          Home
-        </Link>
+        <div className="support-nav-actions">
+          <LangToggle />
+          <Link className="support-home-link" href="/">
+            <Home size={16} />
+            <T en="Home" vi="Trang chủ" />
+          </Link>
+        </div>
       </header>
 
       <section className="support-hero">
         <div className="support-hero-copy">
-          <p className="eyebrow">Support</p>
-          <h1>Deep Ocean Support</h1>
+          <p className="eyebrow"><T en={heroCopy.eyebrow.en} vi={heroCopy.eyebrow.vi} /></p>
+          <h1><T en={heroCopy.title.en} vi={heroCopy.title.vi} /></h1>
           <p>
-            Need help with a focus dive, widget, Live Activity, Pro access, or
-            privacy request? Contact the Deep Ocean team and include enough
-            device details to reproduce the issue.
+            <T en={heroCopy.body.en} vi={heroCopy.body.vi} />
           </p>
           <div className="support-actions">
             <a className="button button-primary" href={`mailto:${supportEmail}`}>
               <Mail size={18} />
-              Email support
+              <T en={heroCopy.emailButton.en} vi={heroCopy.emailButton.vi} />
             </a>
             <a className="button button-secondary" href={siteLinks.contact}>
               <MessageCircle size={18} />
-              Contact team
+              <T en={heroCopy.contactButton.en} vi={heroCopy.contactButton.vi} />
             </a>
           </div>
           <p className="support-email-note">
-            Support email: <a href={`mailto:${supportEmail}`}>{supportEmail}</a>
+            <T en={heroCopy.emailNotePrefix.en} vi={heroCopy.emailNotePrefix.vi} /><a href={`mailto:${supportEmail}`}>{supportEmail}</a>
           </p>
         </div>
 
@@ -141,28 +108,28 @@ export default function SupportPage() {
             priority
           />
           <div>
-            <span>For Apple review</span>
+            <span><T en={heroCopy.cardLabel.en} vi={heroCopy.cardLabel.vi} /></span>
             <strong>https://deepocean.io.vn/support</strong>
-            <p>Public support URL for App Store Connect submissions.</p>
+            <p><T en={heroCopy.cardNote.en} vi={heroCopy.cardNote.vi} /></p>
           </div>
         </div>
       </section>
 
       <section className="support-section">
         <div className="support-section-heading">
-          <p className="eyebrow">How we can help</p>
-          <h2>Support topics</h2>
+          <p className="eyebrow"><T en={topicsHeading.eyebrow.en} vi={topicsHeading.eyebrow.vi} /></p>
+          <h2><T en={topicsHeading.title.en} vi={topicsHeading.title.vi} /></h2>
         </div>
         <div className="support-topic-grid">
           {supportTopics.map((topic) => {
             const Icon = topic.icon;
             return (
-              <article className="support-topic-card" key={topic.title}>
+              <article className="support-topic-card" key={topic.title.en}>
                 <span>
                   <Icon size={20} />
                 </span>
-                <h3>{topic.title}</h3>
-                <p>{topic.body}</p>
+                <h3><T en={topic.title.en} vi={topic.title.vi} /></h3>
+                <p><T en={topic.body.en} vi={topic.body.vi} /></p>
               </article>
             );
           })}
@@ -171,24 +138,22 @@ export default function SupportPage() {
 
       <section className="support-section support-two-column">
         <div className="support-panel">
-          <p className="eyebrow">Before emailing</p>
-          <h2>Include these details</h2>
+          <p className="eyebrow"><T en={beforeEmailingHeading.eyebrow.en} vi={beforeEmailingHeading.eyebrow.vi} /></p>
+          <h2><T en={beforeEmailingHeading.title.en} vi={beforeEmailingHeading.title.vi} /></h2>
           <ul className="support-checklist">
-            <li>Device model and iOS version</li>
-            <li>Deep Ocean app version</li>
-            <li>What you expected to happen</li>
-            <li>What happened instead</li>
-            <li>Screenshots or screen recording if available</li>
+            {checklistItems.map((item) => (
+              <li key={item.en}><T en={item.en} vi={item.vi} /></li>
+            ))}
           </ul>
         </div>
 
         <div className="support-panel">
-          <p className="eyebrow">Quick answers</p>
+          <p className="eyebrow"><T en={quickAnswersHeading.eyebrow.en} vi={quickAnswersHeading.eyebrow.vi} /></p>
           <div className="support-faq-list">
             {quickAnswers.map((item) => (
-              <article key={item.question}>
-                <h3>{item.question}</h3>
-                <p>{item.answer}</p>
+              <article key={item.question.en}>
+                <h3><T en={item.question.en} vi={item.question.vi} /></h3>
+                <p><T en={item.answer.en} vi={item.answer.vi} /></p>
               </article>
             ))}
           </div>
@@ -198,15 +163,13 @@ export default function SupportPage() {
       <section className="support-final">
         <div>
           <RefreshCw size={22} />
-          <h2>Still need help?</h2>
+          <h2><T en={finalCopy.title.en} vi={finalCopy.title.vi} /></h2>
           <p>
-            Send a support request and the team will review it. For App Store
-            refunds or billing changes, Apple may require handling the request
-            through your Apple account purchase history.
+            <T en={finalCopy.body.en} vi={finalCopy.body.vi} />
           </p>
         </div>
         <a className="button button-primary" href={`mailto:${supportEmail}`}>
-          Email Deep Ocean
+          <T en={finalCopy.button.en} vi={finalCopy.button.vi} />
           <ArrowUpRight size={18} />
         </a>
       </section>
