@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { navItems, siteLinks } from "@/content/landingContent";
+import { LangToggle } from "@/components/ui/LangToggle";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -29,6 +30,7 @@ export default function Navbar() {
             {link.label}
           </a>
         ))}
+        <LangToggle />
       </div>
 
       <a className="nav-cta" href={siteLinks.primaryCta}>

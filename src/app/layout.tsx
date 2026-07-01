@@ -83,9 +83,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-locale="en"
       suppressHydrationWarning
       className={`${spaceGrotesk.variable} ${inter.variable} ${jetBrainsMono.variable}`}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var s=localStorage.getItem("deepocean-locale");var l=(s==="en"||s==="vi")?s:((navigator.language||"").toLowerCase().indexOf("vi")===0?"vi":"en");document.documentElement.setAttribute("data-locale",l);document.documentElement.lang=l;}catch(e){}})();`,
+          }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );
