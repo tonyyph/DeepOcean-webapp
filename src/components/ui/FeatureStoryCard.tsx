@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
+import type { ReactNode } from "react";
 import { useRef } from "react";
 
 type FeatureStoryCardProps = {
@@ -12,9 +13,9 @@ type FeatureStoryCardProps = {
     height: number;
     position?: string;
   };
-  category: string;
-  title: string;
-  description: string;
+  category: ReactNode;
+  title: ReactNode;
+  description: ReactNode;
   index: number;
 };
 
