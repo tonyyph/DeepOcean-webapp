@@ -328,27 +328,36 @@ export const intelligence = [
 ] as const;
 
 export const progressMetrics = [
-  { value: "5", label: "ocean zones", icon: Layers3 },
-  { value: "164", label: "catalog entries", icon: FishSymbol },
-  { value: "500", label: "local session records", icon: Gauge },
-  { value: "EN / VI", label: "app languages", icon: Waves },
+  { value: "5", label: { en: "ocean zones", vi: "vùng đại dương" }, icon: Layers3 },
+  { value: "164", label: { en: "catalog entries", vi: "mục trong danh mục" }, icon: FishSymbol },
+  { value: "500", label: { en: "local session records", vi: "bản ghi phiên cục bộ" }, icon: Gauge },
+  { value: "EN / VI", label: { en: "app languages", vi: "ngôn ngữ ứng dụng" }, icon: Waves },
 ] as const;
 
 export const progressFeatures = [
   {
     icon: History,
-    title: "Expedition history",
-    body: "Every surfaced session becomes a dated record with duration, maximum depth, discoveries, and XP.",
+    title: { en: "Expedition history", vi: "Lịch sử thám hiểm" },
+    body: {
+      en: "Every surfaced session becomes a dated record with duration, maximum depth, discoveries, and XP.",
+      vi: "Mỗi phiên đã trồi lên trở thành một bản ghi có ngày tháng với thời lượng, độ sâu tối đa, khám phá và XP.",
+    },
   },
   {
     icon: ChartNoAxesCombined,
-    title: "Weekly focus shape",
-    body: "A seven-day heatmap makes consistency visible without turning the experience into a spreadsheet.",
+    title: { en: "Weekly focus shape", vi: "Nhịp độ tập trung theo tuần" },
+    body: {
+      en: "A seven-day heatmap makes consistency visible without turning the experience into a spreadsheet.",
+      vi: "Bản đồ nhiệt bảy ngày giúp thấy rõ sự đều đặn mà không biến trải nghiệm thành một bảng tính.",
+    },
   },
   {
     icon: Trophy,
-    title: "Long-term progression",
-    body: "Levels, current and longest streaks, depth records, collection milestones, and title achievements reward return.",
+    title: { en: "Long-term progression", vi: "Tiến trình dài hạn" },
+    body: {
+      en: "Levels, current and longest streaks, depth records, collection milestones, and title achievements reward return.",
+      vi: "Cấp độ, chuỗi ngày hiện tại và dài nhất, kỷ lục độ sâu, cột mốc bộ sưu tập và danh hiệu thành tựu tưởng thưởng cho sự quay lại.",
+    },
   },
 ] as const;
 
