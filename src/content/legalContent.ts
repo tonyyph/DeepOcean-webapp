@@ -39,12 +39,12 @@ export const privacyPage: LegalPage = {
         en: [
           "Deep Ocean does not collect your name, email address, or any personal identifier by default. The following information may be involved in specific circumstances:",
           "AI guidance prompts — If you use the Marine Guide feature, the text you enter as context or questions may be sent to a configured third-party AI provider to generate a response. Deep Ocean does not store these prompts on its own servers.",
-          "Purchase verification — If you subscribe to Deep Ocean Pro, your purchase is verified through RevenueCat and the Apple App Store. We receive a subscription status and purchase receipt identifier, but not your payment card details or Apple ID.",
+          "Support messages — If you email support, we receive the information you choose to include, such as device details, app version, screenshots, and the issue description.",
         ],
         vi: [
           "Deep Ocean không thu thập tên, địa chỉ email hoặc bất kỳ thông tin nhận dạng cá nhân nào theo mặc định. Các thông tin sau đây có thể liên quan trong các trường hợp cụ thể:",
           "Lời nhắc hướng dẫn AI — Nếu bạn sử dụng tính năng Marine Guide, văn bản bạn nhập làm ngữ cảnh hoặc câu hỏi có thể được gửi đến nhà cung cấp AI bên thứ ba đã cấu hình để tạo phản hồi. Deep Ocean không lưu trữ những lời nhắc này trên máy chủ của mình.",
-          "Xác minh giao dịch mua — Nếu bạn đăng ký Deep Ocean Pro, giao dịch mua của bạn được xác minh qua RevenueCat và App Store của Apple. Chúng tôi nhận được trạng thái đăng ký và mã định danh biên lai mua hàng, nhưng không nhận thông tin thẻ thanh toán hoặc Apple ID của bạn.",
+          "Tin nhắn hỗ trợ — Nếu bạn gửi email hỗ trợ, chúng tôi nhận thông tin bạn chọn cung cấp, chẳng hạn như chi tiết thiết bị, phiên bản ứng dụng, ảnh chụp màn hình và mô tả sự cố.",
         ],
       },
     },
@@ -54,11 +54,11 @@ export const privacyPage: LegalPage = {
       body: {
         en: [
           "The core product data in Deep Ocean is stored locally on your device using MMKV, a fast on-device key-value storage library. Data stored locally includes: dive history and expedition records, XP and level progression, streaks and achievements, your creature and artifact collection, app settings and personalization preferences, cached AI guidance responses, and mood and onboarding data.",
-          "This data does not leave your device unless you explicitly use a feature that requires a network connection, such as Marine Guide or Pro subscription management.",
+          "This data does not leave your device unless you explicitly use a feature that requires a network connection, such as Marine Guide or email support.",
         ],
         vi: [
           "Dữ liệu sản phẩm cốt lõi trong Deep Ocean được lưu trữ cục bộ trên thiết bị của bạn bằng MMKV, thư viện lưu trữ khóa-giá trị nhanh trên thiết bị. Dữ liệu được lưu trữ cục bộ bao gồm: lịch sử lặn và hồ sơ thám hiểm, tiến độ XP và cấp độ, chuỗi ngày và thành tích, bộ sưu tập sinh vật và hiện vật, cài đặt ứng dụng và tùy chọn cá nhân hóa, phản hồi hướng dẫn AI đã lưu vào bộ nhớ đệm, và dữ liệu tâm trạng và giới thiệu.",
-          "Dữ liệu này không rời khỏi thiết bị của bạn trừ khi bạn sử dụng tính năng yêu cầu kết nối mạng, chẳng hạn như Marine Guide hoặc quản lý đăng ký Pro.",
+          "Dữ liệu này không rời khỏi thiết bị của bạn trừ khi bạn sử dụng tính năng yêu cầu kết nối mạng, chẳng hạn như Marine Guide hoặc email hỗ trợ.",
         ],
       },
     },
@@ -68,16 +68,14 @@ export const privacyPage: LegalPage = {
       body: {
         en: [
           "Deep Ocean integrates with the following third-party services in specific circumstances:",
-          "RevenueCat — Used to manage and verify Deep Ocean Pro subscriptions. RevenueCat processes purchase receipts from the Apple App Store. Their privacy policy is available at revenuecat.com.",
           "AI Providers — The Marine Guide feature may send your focus context and prompts to a configured AI provider. This connection is optional and only active when you use Marine Guide. The provider processes your input according to their own privacy policy.",
-          "Apple App Store — App distribution, updates, optional crash reporting (if you have opted in via iOS Settings), and purchase billing are handled by Apple under Apple's privacy policy.",
+          "Apple App Store — App distribution, updates, and optional crash reporting (if you have opted in via iOS Settings) are handled by Apple under Apple's privacy policy.",
           "Deep Ocean does not use advertising SDKs, analytics SDKs, or social media tracking.",
         ],
         vi: [
           "Deep Ocean tích hợp với các dịch vụ bên thứ ba sau trong các trường hợp cụ thể:",
-          "RevenueCat — Được sử dụng để quản lý và xác minh các đăng ký Deep Ocean Pro. RevenueCat xử lý biên lai mua hàng từ App Store của Apple. Chính sách quyền riêng tư của họ có tại revenuecat.com.",
           "Nhà cung cấp AI — Tính năng Marine Guide có thể gửi ngữ cảnh tập trung và lời nhắc của bạn đến nhà cung cấp AI đã cấu hình. Kết nối này là tùy chọn và chỉ hoạt động khi bạn sử dụng Marine Guide. Nhà cung cấp xử lý đầu vào của bạn theo chính sách quyền riêng tư của riêng họ.",
-          "App Store của Apple — Phân phối ứng dụng, cập nhật, báo cáo sự cố tùy chọn (nếu bạn đã chọn tham gia qua Cài đặt iOS) và thanh toán mua hàng được xử lý bởi Apple theo chính sách quyền riêng tư của Apple.",
+          "App Store của Apple — Phân phối ứng dụng, cập nhật và báo cáo sự cố tùy chọn (nếu bạn đã chọn tham gia qua Cài đặt iOS) được xử lý bởi Apple theo chính sách quyền riêng tư của Apple.",
           "Deep Ocean không sử dụng SDK quảng cáo, SDK phân tích hoặc theo dõi mạng xã hội.",
         ],
       },
@@ -102,11 +100,11 @@ export const privacyPage: LegalPage = {
       body: {
         en: [
           "Because Deep Ocean stores your data locally on your device, you have direct control over it. You can delete all local app data by removing Deep Ocean from your device, or use any data management options available in the app's settings.",
-          "For purchase-related data held by RevenueCat or Apple, email us at support@deepocean.io.vn with the subject line \"Data deletion request\" and we will guide you through the process.",
+          "If you have contacted support and want us to remove your support correspondence, email us at support@deepocean.io.vn with the subject line \"Data deletion request\" and we will guide you through the process.",
         ],
         vi: [
           "Vì Deep Ocean lưu trữ dữ liệu của bạn cục bộ trên thiết bị, bạn có quyền kiểm soát trực tiếp. Bạn có thể xóa tất cả dữ liệu ứng dụng cục bộ bằng cách xóa Deep Ocean khỏi thiết bị, hoặc sử dụng các tùy chọn quản lý dữ liệu có trong cài đặt của ứng dụng.",
-          "Đối với dữ liệu liên quan đến giao dịch mua do RevenueCat hoặc Apple lưu giữ, hãy email cho chúng tôi tại support@deepocean.io.vn với dòng tiêu đề \"Data deletion request\" và chúng tôi sẽ hướng dẫn bạn qua quy trình.",
+          "Nếu bạn đã liên hệ hỗ trợ và muốn chúng tôi xóa thư từ hỗ trợ, hãy email cho chúng tôi tại support@deepocean.io.vn với dòng tiêu đề \"Data deletion request\" và chúng tôi sẽ hướng dẫn bạn qua quy trình.",
         ],
       },
     },
@@ -196,19 +194,19 @@ export const termsPage: LegalPage = {
       },
     },
     {
-      id: "subscriptions",
+      id: "free-access",
       heading: {
-        en: "Deep Ocean Pro & Subscriptions",
-        vi: "Deep Ocean Pro & Đăng ký",
+        en: "Free Access",
+        vi: "Quyền truy cập miễn phí",
       },
       body: {
         en: [
-          "Deep Ocean Pro is an optional premium subscription that unlocks additional themes, advanced AI insights, and full field journals. Subscriptions are sold through the Apple App Store and managed by RevenueCat. By subscribing, you agree to Apple's payment terms. Deep Ocean does not handle your payment information directly.",
-          "To restore a previous purchase, use the Restore Purchases option in the app's Profile or Pro settings. Refunds for App Store purchases are subject to Apple's refund policy and must be requested through your Apple account purchase history. Deep Ocean cannot issue refunds directly.",
+          "Deep Ocean is currently presented to users as a free focus app. The current experience includes focus dives, progression, themes, guidance, collections, and field journals.",
+          "If a feature appears unavailable or behaves differently than described, contact support with your app version, device model, and screenshots so we can investigate.",
         ],
         vi: [
-          "Deep Ocean Pro là đăng ký cao cấp tùy chọn mở khóa các chủ đề bổ sung, thông tin AI nâng cao và nhật ký thực địa đầy đủ. Đăng ký được bán qua App Store của Apple và quản lý bởi RevenueCat. Bằng cách đăng ký, bạn đồng ý với điều khoản thanh toán của Apple. Deep Ocean không xử lý thông tin thanh toán của bạn trực tiếp.",
-          "Để khôi phục giao dịch mua trước đó, hãy sử dụng tùy chọn Khôi phục giao dịch mua trong cài đặt Hồ sơ hoặc Pro của ứng dụng. Hoàn tiền cho giao dịch mua trên App Store phải tuân theo chính sách hoàn tiền của Apple và phải được yêu cầu qua lịch sử mua hàng của tài khoản Apple. Deep Ocean không thể hoàn tiền trực tiếp.",
+          "Deep Ocean hiện được trình bày với người dùng như một ứng dụng tập trung miễn phí. Trải nghiệm hiện tại không yêu cầu tầng trả phí để sử dụng lượt lặn tập trung, tiến trình, giao diện, hướng dẫn, bộ sưu tập hoặc nhật ký thực địa.",
+          "Nếu một tính năng có vẻ chưa khả dụng hoặc hoạt động khác với mô tả, hãy liên hệ hỗ trợ kèm phiên bản ứng dụng, model thiết bị và ảnh chụp màn hình để chúng tôi kiểm tra.",
         ],
       },
     },
@@ -217,10 +215,10 @@ export const termsPage: LegalPage = {
       heading: { en: "Acceptable Use", vi: "Sử dụng hợp lệ" },
       body: {
         en: [
-          "You agree to use Deep Ocean only for its intended purpose as a personal focus tool. You must not attempt to reverse engineer, decompile, or extract the source code of the app; use AI features to generate harmful, illegal, or abusive content; circumvent purchase verification or access Pro features without a valid subscription; or use the app in any way that violates applicable law or the rights of others.",
+          "You agree to use Deep Ocean only for its intended purpose as a personal focus tool. You must not attempt to reverse engineer, decompile, or extract the source code of the app; use AI features to generate harmful, illegal, or abusive content; interfere with app security or availability; or use the app in any way that violates applicable law or the rights of others.",
         ],
         vi: [
-          "Bạn đồng ý sử dụng Deep Ocean chỉ cho mục đích dự định của nó như một công cụ tập trung cá nhân. Bạn không được: cố gắng đảo ngược kỹ thuật, biên dịch ngược hoặc trích xuất mã nguồn của ứng dụng; sử dụng các tính năng AI để tạo nội dung có hại, bất hợp pháp hoặc lạm dụng; vượt qua xác minh mua hàng hoặc truy cập các tính năng Pro mà không có đăng ký hợp lệ; hoặc sử dụng ứng dụng theo bất kỳ cách nào vi phạm pháp luật hiện hành hoặc quyền của người khác.",
+          "Bạn đồng ý sử dụng Deep Ocean chỉ cho mục đích dự định của nó như một công cụ tập trung cá nhân. Bạn không được: cố gắng đảo ngược kỹ thuật, biên dịch ngược hoặc trích xuất mã nguồn của ứng dụng; sử dụng các tính năng AI để tạo nội dung có hại, bất hợp pháp hoặc lạm dụng; can thiệp vào bảo mật hoặc tính khả dụng của ứng dụng; hoặc sử dụng ứng dụng theo bất kỳ cách nào vi phạm pháp luật hiện hành hoặc quyền của người khác.",
         ],
       },
     },
@@ -250,11 +248,11 @@ export const termsPage: LegalPage = {
       body: {
         en: [
           "To the maximum extent permitted by applicable law, Deep Ocean and its creators shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the app.",
-          "In no event shall our total liability to you exceed the amount you paid for Deep Ocean Pro in the twelve months preceding the claim.",
+          "In no event shall our total liability to you exceed the maximum amount permitted by applicable law.",
         ],
         vi: [
           "Trong phạm vi tối đa được pháp luật hiện hành cho phép, Deep Ocean và những người tạo ra nó sẽ không chịu trách nhiệm về bất kỳ thiệt hại gián tiếp, ngẫu nhiên, đặc biệt, hậu quả hoặc trừng phạt nào phát sinh từ việc bạn sử dụng ứng dụng.",
-          "Trong mọi trường hợp, tổng trách nhiệm của chúng tôi đối với bạn sẽ không vượt quá số tiền bạn đã trả cho Deep Ocean Pro trong mười hai tháng trước khi xảy ra khiếu nại.",
+          "Trong mọi trường hợp, tổng trách nhiệm của chúng tôi đối với bạn sẽ không vượt quá mức tối đa được pháp luật hiện hành cho phép.",
         ],
       },
     },

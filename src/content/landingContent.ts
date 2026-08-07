@@ -33,7 +33,7 @@ export const navItems = [
   { label: { en: "Why Deep Ocean", vi: "Vì sao chọn Deep Ocean" }, href: "#problem" },
   { label: { en: "Features", vi: "Tính năng" }, href: "#features" },
   { label: { en: "Experience", vi: "Trải nghiệm" }, href: "#screens" },
-  { label: { en: "Pro", vi: "Pro" }, href: "#premium" },
+  { label: { en: "Free Access", vi: "Miễn phí" }, href: "#free-access" },
   { label: { en: "Privacy", vi: "Quyền riêng tư" }, href: "#privacy" },
 ] as const;
 
@@ -94,8 +94,8 @@ export const features = [
     icon: Trophy,
     title: { en: "XP, levels, streaks, and titles", vi: "XP, cấp độ, chuỗi ngày và danh hiệu" },
     description: {
-      en: "Completed focus earns XP and can advance levels, daily streaks, zone unlocks, and milestone achievements.",
-      vi: "Hoàn thành phiên tập trung nhận XP và có thể tăng cấp độ, duy trì chuỗi ngày, mở khóa vùng mới và đạt các cột mốc thành tựu.",
+      en: "Completed focus earns XP and can advance levels, daily streaks, new zones, and milestone achievements.",
+      vi: "Hoàn thành phiên tập trung nhận XP và có thể tăng cấp độ, duy trì chuỗi ngày, chạm tới vùng mới và đạt các cột mốc thành tựu.",
     },
     tag: { en: "Motivation", vi: "Động lực" },
   },
@@ -235,8 +235,8 @@ export const screenPreviews = [
     label: { en: "Expedition log", vi: "Nhật ký thám hiểm" },
     title: { en: "A collection earned through real focus", vi: "Một bộ sưu tập đạt được nhờ sự tập trung thật sự" },
     description: {
-      en: "Catalog creatures and artifacts by rarity, revisit sightings, and unlock deeper field-journal entries with Pro.",
-      vi: "Phân loại sinh vật và cổ vật theo độ hiếm, xem lại các lần bắt gặp, và mở khóa các mục nhật ký thực địa chuyên sâu hơn với Pro.",
+      en: "Catalog creatures and artifacts by rarity, revisit sightings, and read deeper field-journal entries as part of the free app.",
+      vi: "Phân loại sinh vật và cổ vật theo độ hiếm, xem lại các lần bắt gặp, và đọc các mục nhật ký thực địa chuyên sâu ngay trong ứng dụng miễn phí.",
     },
   },
   {
@@ -257,48 +257,39 @@ export const screenPreviews = [
       vi: "Gợi ý hằng ngày, động lực, nhìn lại phiên tập trung, chọn tâm trạng, và cơ chế dự phòng cục bộ hoặc lưu đệm khi AI trên máy chủ không khả dụng.",
     },
   },
-  {
-    id: "premium",
-    label: { en: "Profile & Pro", vi: "Hồ sơ & Pro" },
-    title: { en: "Settings and premium access in one place", vi: "Cài đặt và quyền truy cập cao cấp ở một nơi" },
-    description: {
-      en: "Manage the diver profile, XP, themes, language, reminders, motion, haptics, audio, and verified Pro entitlements.",
-      vi: "Quản lý hồ sơ thợ lặn, XP, giao diện, ngôn ngữ, nhắc nhở, chuyển động, rung phản hồi, âm thanh và quyền lợi Pro đã xác minh.",
-    },
-  },
 ] as const;
 
-export const premiumBenefits = [
+export const freeAccessBenefits = [
   {
     icon: Palette,
-    title: { en: "Seven premium themes", vi: "Bảy giao diện cao cấp" },
+    title: { en: "All themes included", vi: "Bao gồm mọi giao diện" },
     description: {
-      en: "App-wide visual identities with distinct palettes, typography, particles, gradients, and ambient effects.",
-      vi: "Bộ nhận diện hình ảnh toàn ứng dụng với bảng màu, kiểu chữ, hiệu ứng hạt, gradient và hiệu ứng không khí riêng biệt.",
+      en: "Use every visual identity, palette, particle style, gradient, and ambient effect in the current free app.",
+      vi: "Sử dụng mọi bộ nhận diện hình ảnh, bảng màu, kiểu hạt, gradient và hiệu ứng không khí trong ứng dụng miễn phí hiện tại.",
     },
   },
   {
     icon: BrainCircuit,
-    title: { en: "Deep AI insights", vi: "Phân tích sâu từ AI" },
+    title: { en: "Full guidance access", vi: "Truy cập đầy đủ hướng dẫn" },
     description: {
-      en: "Unlock personal trend analysis, mood-correlated patterns, focus plans, and a guided breathing ritual.",
-      vi: "Mở khóa phân tích xu hướng cá nhân, các mẫu hình liên quan đến tâm trạng, kế hoạch tập trung và một nghi thức hít thở có hướng dẫn.",
+      en: "Personal trend analysis, mood-correlated patterns, focus plans, and guided breathing are available to current users for free.",
+      vi: "Phân tích xu hướng cá nhân, mẫu hình theo tâm trạng, kế hoạch tập trung và hít thở có hướng dẫn đều miễn phí cho người dùng hiện tại.",
     },
   },
   {
     icon: BookOpen,
-    title: { en: "Full field journals", vi: "Nhật ký thực địa đầy đủ" },
+    title: { en: "Complete field journals", vi: "Nhật ký thực địa đầy đủ" },
     description: {
-      en: "Read the folklore, theories, and sealed expedition notes behind discovered creatures and artifacts.",
-      vi: "Đọc truyền thuyết, giả thuyết và ghi chú thám hiểm được niêm phong đằng sau các sinh vật và cổ vật đã khám phá.",
+      en: "Read the folklore, theories, and expedition notes behind discovered creatures and artifacts as part of the free experience.",
+      vi: "Đọc truyền thuyết, giả thuyết và ghi chú thám hiểm đằng sau các sinh vật và cổ vật đã khám phá như một phần của trải nghiệm miễn phí.",
     },
   },
   {
     icon: Gem,
-    title: { en: "A more personal ocean", vi: "Một đại dương mang dấu ấn riêng" },
+    title: { en: "A fully open ocean", vi: "Một đại dương mở hoàn toàn" },
     description: {
-      en: "Pro elevates the tab experience and lets the visual system feel deliberately yours while the core timer remains accessible.",
-      vi: "Pro nâng tầm trải nghiệm các tab và giúp hệ thống hình ảnh mang đậm dấu ấn cá nhân, trong khi bộ đếm giờ cốt lõi vẫn luôn sẵn sàng.",
+      en: "The timer, progression, visual system, reflections, and expedition details are presented as one free experience.",
+      vi: "Bộ đếm giờ, tiến trình, hệ thống hình ảnh, phần nhìn lại và chi tiết thám hiểm được trình bày như một trải nghiệm miễn phí thống nhất.",
     },
   },
 ] as const;
@@ -308,8 +299,8 @@ export const intelligence = [
     icon: BrainCircuit,
     title: { en: "Context-aware companion", vi: "Người bạn đồng hành hiểu bối cảnh" },
     description: {
-      en: "Guidance can use your level, streak, mood, unlocked zones, achievements, and recent sessions.",
-      vi: "Hướng dẫn có thể dựa trên cấp độ, chuỗi ngày, tâm trạng, vùng đã mở khóa, thành tựu và các phiên gần đây của bạn.",
+      en: "Guidance can use your level, streak, mood, reached zones, achievements, and recent sessions.",
+      vi: "Hướng dẫn có thể dựa trên cấp độ, chuỗi ngày, tâm trạng, vùng đã chạm tới, thành tựu và các phiên gần đây của bạn.",
     },
   },
   {
@@ -380,10 +371,10 @@ export const faqs = [
     },
   },
   {
-    question: { en: "What stays available without Pro?", vi: "Điều gì vẫn khả dụng khi không dùng Pro?" },
+    question: { en: "Is Deep Ocean free to use?", vi: "Deep Ocean có miễn phí để sử dụng không?" },
     answer: {
-      en: "The core dive timer, XP, streaks, basic expedition history, collection loop, and standard guidance remain part of the core experience. Pro adds premium themes, deeper AI insights, and full field journals.",
-      vi: "Bộ đếm giờ lặn cốt lõi, XP, chuỗi ngày, lịch sử thám hiểm cơ bản, vòng lặp bộ sưu tập và hướng dẫn tiêu chuẩn vẫn là một phần của trải nghiệm cốt lõi. Pro bổ sung giao diện cao cấp, phân tích AI chuyên sâu hơn và nhật ký thực địa đầy đủ.",
+      en: "Yes. The current app experience is presented as free: focus dives, XP, streaks, expedition history, collections, themes, guidance, and field journals are included for current users.",
+      vi: "Có. Trải nghiệm ứng dụng hiện tại được trình bày là miễn phí: lượt lặn tập trung, XP, chuỗi ngày, lịch sử thám hiểm, bộ sưu tập, giao diện, hướng dẫn và nhật ký thực địa đều được bao gồm cho người dùng hiện tại.",
     },
   },
   {
@@ -422,7 +413,7 @@ export const footerGroups = [
     links: [
       { label: { en: "Features", vi: "Tính năng" }, href: "#features" },
       { label: { en: "Experience", vi: "Trải nghiệm" }, href: "#screens" },
-      { label: { en: "Deep Ocean Pro", vi: "Deep Ocean Pro" }, href: "#premium" },
+      { label: { en: "Free Access", vi: "Miễn phí" }, href: "#free-access" },
     ],
   },
   {
@@ -469,8 +460,8 @@ export const privacyPoints = [
     icon: ShieldCheck,
     title: { en: "Clear network boundaries", vi: "Ranh giới mạng rõ ràng" },
     body: {
-      en: "Optional AI providers, RevenueCat purchases, and app updates can use network services. Deep Ocean does not claim that every feature is fully offline.",
-      vi: "Nhà cung cấp AI tùy chọn, giao dịch mua qua RevenueCat và cập nhật ứng dụng có thể sử dụng dịch vụ mạng. Deep Ocean không khẳng định mọi tính năng đều hoàn toàn ngoại tuyến.",
+      en: "Optional AI providers and app updates can use network services. Deep Ocean does not claim that every feature is fully offline.",
+      vi: "Nhà cung cấp AI tùy chọn và cập nhật ứng dụng có thể sử dụng dịch vụ mạng. Deep Ocean không khẳng định mọi tính năng đều hoàn toàn ngoại tuyến.",
     },
   },
 ] as const;

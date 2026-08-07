@@ -4,10 +4,10 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { FeaturesSection } from "@/components/sections/FeaturesSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
 import { Footer } from "@/components/sections/Footer";
+import { FreeAccessSection } from "@/components/sections/FreeAccessSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
 import { LovedByTravelersSection } from "@/components/sections/LovedByTravelersSection";
-import { PremiumSection } from "@/components/sections/PremiumSection";
 import { PrivacySection } from "@/components/sections/PrivacySection";
 import { ProblemSolutionSection } from "@/components/sections/ProblemSolutionSection";
 import { ScreensPreviewSection } from "@/components/sections/ScreensPreviewSection";
@@ -28,7 +28,7 @@ export default function Home() {
       <LovedByTravelersSection />
       <HowItWorksSection />
       <ScreensPreviewSection />
-      <PremiumSection />
+      <FreeAccessSection />
       <AISection />
       <WidgetSection />
       <StatsSection />

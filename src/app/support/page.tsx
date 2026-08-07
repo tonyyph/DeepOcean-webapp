@@ -27,14 +27,14 @@ import { T } from "@/components/ui/T";
 export const metadata: Metadata = {
   title: "Deep Ocean Support",
   description:
-    "Get help with Deep Ocean focus dives, widgets, Live Activities, Deep Ocean Pro, privacy, and App Store support requests.",
+    "Get help with Deep Ocean focus dives, widgets, Live Activities, free app access, privacy, and App Store support requests.",
   alternates: {
     canonical: "/support",
   },
   openGraph: {
     title: "Deep Ocean Support",
     description:
-      "Support and contact page for Deep Ocean on iOS, including focus sessions, widgets, premium access, and privacy help.",
+      "Support and contact page for Deep Ocean on iOS, including focus sessions, widgets, free app access, and privacy help.",
     url: "/support",
     siteName: "Deep Ocean",
     type: "website",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Deep Ocean Support",
     description:
-      "Contact Deep Ocean support for app help, purchase restore questions, widgets, and privacy requests.",
+      "Contact Deep Ocean support for app help, free access questions, widgets, and privacy requests.",
     images: ["/assets/ocean-portal-wide.png"],
   },
 };

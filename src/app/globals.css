@@ -156,7 +156,7 @@ h3 {
 }
 
 .section-heading h2,
-.premium-copy h2,
+.free-access-copy h2,
 .widget-copy h2,
 .final-cta-content h2 {
   margin-bottom: 1.1rem;
@@ -169,7 +169,7 @@ h3 {
 
 .section-description,
 .section-heading .section-description,
-.premium-copy > p,
+.free-access-copy > p,
 .widget-copy > p {
   color: var(--color-text-secondary);
   font-size: clamp(1rem, 1.5vw, 1.13rem);
@@ -849,21 +849,6 @@ html[data-locale="vi"] .i18n-vi {
   background: linear-gradient(180deg, var(--color-cyan), rgba(34,228,255,0.15));
 }
 
-.mock-pro-row {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  margin-top: 0.75rem;
-  border: 1px solid rgba(255,184,107,0.22);
-  border-radius: 13px;
-  padding: 0.75rem;
-  color: var(--color-amber);
-  font-family: var(--font-mono), monospace;
-  font-size: 0.55rem;
-}
-
-.mock-pro-row svg:last-child { margin-left: auto; }
-
 .problem-section {
   padding-top: 4rem;
 }
@@ -972,7 +957,7 @@ html[data-locale="vi"] .i18n-vi {
 }
 
 .feature-card,
-.premium-benefit,
+.free-access-benefit,
 .testimonial-card,
 .metric-card {
   border: 1px solid var(--color-line);
@@ -1003,7 +988,7 @@ html[data-locale="vi"] .i18n-vi {
 .feature-icon,
 .intelligence-item > span,
 .progress-feature > span,
-.premium-benefit > span {
+.free-access-benefit > span {
   display: grid;
   place-items: center;
   width: 42px;
@@ -1023,7 +1008,7 @@ html[data-locale="vi"] .i18n-vi {
 }
 
 .feature-card h3,
-.premium-benefit h3,
+.free-access-benefit h3,
 .intelligence-item h3,
 .progress-feature h3,
 .step-card h3,
@@ -1033,7 +1018,7 @@ html[data-locale="vi"] .i18n-vi {
 }
 
 .feature-card p,
-.premium-benefit p,
+.free-access-benefit p,
 .intelligence-item p,
 .progress-feature p,
 .step-card p,
@@ -1405,14 +1390,14 @@ html[data-locale="vi"] .i18n-vi {
   margin-bottom: -130px;
 }
 
-.premium-section {
+.free-access-section {
   overflow: hidden;
   border-top: 1px solid rgba(255,184,107,0.1);
   border-bottom: 1px solid rgba(255,184,107,0.1);
   background: linear-gradient(135deg, rgba(255,184,107,0.05), rgba(167,139,250,0.05));
 }
 
-.premium-glow {
+.free-access-glow {
   position: absolute;
   top: -200px;
   left: 12%;
@@ -1423,16 +1408,16 @@ html[data-locale="vi"] .i18n-vi {
   filter: blur(90px);
 }
 
-.premium-grid {
+.free-access-grid {
   display: grid;
   grid-template-columns: 0.82fr 1.18fr;
   gap: clamp(2.5rem, 7vw, 7rem);
   align-items: center;
 }
 
-.premium-copy .eyebrow { color: var(--color-amber); }
+.free-access-copy .eyebrow { color: var(--color-amber); }
 
-.premium-principle {
+.free-access-principle {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -1441,7 +1426,7 @@ html[data-locale="vi"] .i18n-vi {
   font-size: 0.9rem;
 }
 
-.button-premium {
+.button-free-access {
   background: linear-gradient(135deg, #ffe0a4, var(--color-amber));
   box-shadow: 0 0 32px rgba(255,184,107,0.15);
   color: #241506;
@@ -1456,12 +1441,12 @@ html[data-locale="vi"] .i18n-vi {
   line-height: 1.5;
 }
 
-.premium-benefits {
+.free-access-benefits {
   display: grid;
   gap: 0.75rem;
 }
 
-.premium-benefit {
+.free-access-benefit {
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 1rem;
@@ -1470,15 +1455,15 @@ html[data-locale="vi"] .i18n-vi {
   padding: 1.1rem;
 }
 
-.premium-benefit > span {
+.free-access-benefit > span {
   border-color: rgba(255,184,107,0.2);
   background: rgba(255,184,107,0.06);
   color: var(--color-amber);
 }
 
-.premium-benefit > svg { color: var(--color-amber); }
-.premium-benefit h3 { margin-bottom: 0.25rem; font-size: 1rem; }
-.premium-benefit p { font-size: 0.8rem; }
+.free-access-benefit > svg { color: var(--color-amber); }
+.free-access-benefit h3 { margin-bottom: 0.25rem; font-size: 1rem; }
+.free-access-benefit p { font-size: 0.8rem; }
 
 .ai-grid,
 .widget-grid,
@@ -2420,7 +2405,7 @@ html[data-locale="vi"] .i18n-vi {
   .hero-depth-scale { display: none; }
 
   .problem-grid,
-  .premium-grid,
+  .free-access-grid,
   .ai-grid,
   .widget-grid,
   .progress-detail-grid,
@@ -2441,7 +2426,7 @@ html[data-locale="vi"] .i18n-vi {
   .step-card:nth-child(3) { padding-left: 0; }
   .step-card:nth-child(2) { padding-right: 0; }
 
-  .premium-grid,
+  .free-access-grid,
   .ai-grid {
     gap: 4rem;
   }

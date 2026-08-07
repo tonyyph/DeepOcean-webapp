@@ -10,14 +10,14 @@ import { LangToggle } from "@/components/ui/LangToggle"
 export const metadata: Metadata = {
   title: "Terms of Service — Deep Ocean",
   description:
-    "Terms of Service for Deep Ocean, covering acceptable use, Deep Ocean Pro subscriptions, intellectual property, disclaimers, and contact.",
+    "Terms of Service for Deep Ocean, covering acceptable use, free app access, intellectual property, disclaimers, and contact.",
   alternates: {
     canonical: "/terms",
   },
   openGraph: {
     title: "Terms of Service — Deep Ocean",
     description:
-      "Read the Terms of Service for Deep Ocean, including subscription terms, acceptable use, and limitation of liability.",
+      "Read the Terms of Service for Deep Ocean, including free access terms, acceptable use, and limitation of liability.",
     url: "/terms",
     siteName: "Deep Ocean",
     type: "website",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Terms of Service — Deep Ocean",
     description:
-      "Deep Ocean Terms of Service — subscriptions, acceptable use, and your rights.",
+      "Deep Ocean Terms of Service — free app access, acceptable use, and your rights.",
     images: ["/assets/ocean-portal-wide.png"],
   },
 }

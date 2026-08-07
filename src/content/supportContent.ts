@@ -1,6 +1,6 @@
 import {
-  CreditCard,
   ShieldCheck,
+  Sparkles,
   Smartphone,
   TimerReset,
 } from "lucide-react";
@@ -11,8 +11,8 @@ export const heroCopy = {
   eyebrow: { en: "Support", vi: "Hỗ trợ" },
   title: { en: "Deep Ocean Support", vi: "Hỗ Trợ Deep Ocean" },
   body: {
-    en: "Need help with a focus dive, widget, Live Activity, Pro access, or privacy request? Contact the Deep Ocean team and include enough device details to reproduce the issue.",
-    vi: "Cần hỗ trợ về lượt lặn tập trung, widget, Live Activity, quyền truy cập Pro, hay yêu cầu về quyền riêng tư? Hãy liên hệ đội ngũ Deep Ocean và cung cấp đủ thông tin thiết bị để chúng tôi có thể tái hiện vấn đề.",
+    en: "Need help with a focus dive, widget, Live Activity, free app access, or privacy request? Contact the Deep Ocean team and include enough device details to reproduce the issue.",
+    vi: "Cần hỗ trợ về lượt lặn tập trung, widget, Live Activity, quyền truy cập ứng dụng miễn phí, hay yêu cầu về quyền riêng tư? Hãy liên hệ đội ngũ Deep Ocean và cung cấp đủ thông tin thiết bị để chúng tôi có thể tái hiện vấn đề.",
   },
   emailButton: { en: "Email support", vi: "Gửi email hỗ trợ" },
   contactButton: { en: "Contact team", vi: "Liên hệ đội ngũ" },
@@ -47,11 +47,11 @@ export const supportTopics = [
     },
   },
   {
-    icon: CreditCard,
-    title: { en: "Deep Ocean Pro", vi: "Deep Ocean Pro" },
+    icon: Sparkles,
+    title: { en: "Free access and included features", vi: "Quyền truy cập miễn phí và tính năng đi kèm" },
     body: {
-      en: "Ask about premium themes, subscription access, purchase restore behavior, or App Store billing questions.",
-      vi: "Hỏi về giao diện cao cấp, quyền truy cập gói đăng ký, khôi phục giao dịch mua, hoặc các câu hỏi về thanh toán trên App Store.",
+      en: "Ask about included themes, guidance, field journals, collection details, or any feature that does not appear available in the current free app.",
+      vi: "Hỏi về giao diện đi kèm, hướng dẫn, nhật ký thực địa, chi tiết bộ sưu tập, hoặc bất kỳ tính năng nào chưa hiển thị trong ứng dụng miễn phí hiện tại.",
     },
   },
   {
@@ -90,10 +90,10 @@ export const quickAnswers = [
     },
   },
   {
-    question: { en: "How do I restore a purchase?", vi: "Làm sao để khôi phục giao dịch mua?" },
+    question: { en: "Do I need to pay to use Deep Ocean?", vi: "Tôi có cần trả phí để dùng Deep Ocean không?" },
     answer: {
-      en: "Open Deep Ocean, go to Profile or Pro settings, then use Restore Purchases. If access is still missing, email support with the Apple ID purchase region and receipt details from Apple.",
-      vi: "Mở Deep Ocean, vào Hồ sơ hoặc cài đặt Pro, rồi dùng chức năng Khôi phục giao dịch mua. Nếu vẫn chưa có quyền truy cập, hãy gửi email cho bộ phận hỗ trợ kèm khu vực mua hàng của Apple ID và chi tiết biên nhận từ Apple.",
+      en: "No. The current Deep Ocean experience is presented as free for users. If a feature appears unavailable, email support with your app version and a screenshot so we can investigate.",
+      vi: "Không. Trải nghiệm Deep Ocean hiện tại được trình bày là miễn phí cho người dùng. Nếu một tính năng có vẻ chưa khả dụng, hãy gửi email hỗ trợ kèm phiên bản ứng dụng và ảnh chụp màn hình để chúng tôi kiểm tra.",
     },
   },
   {
@@ -108,8 +108,8 @@ export const quickAnswers = [
 export const finalCopy = {
   title: { en: "Still need help?", vi: "Vẫn cần hỗ trợ thêm?" },
   body: {
-    en: "Send a support request and the team will review it. For App Store refunds or billing changes, Apple may require handling the request through your Apple account purchase history.",
-    vi: "Gửi một yêu cầu hỗ trợ và đội ngũ sẽ xem xét. Đối với hoàn tiền hoặc thay đổi thanh toán trên App Store, Apple có thể yêu cầu xử lý qua lịch sử mua hàng trong tài khoản Apple của bạn.",
+    en: "Send a support request and the team will review it. Include the screen, app version, device model, and what you expected to happen.",
+    vi: "Gửi một yêu cầu hỗ trợ và đội ngũ sẽ xem xét. Hãy kèm màn hình liên quan, phiên bản ứng dụng, model thiết bị và điều bạn mong đợi sẽ xảy ra.",
   },
   button: { en: "Email Deep Ocean", vi: "Gửi email cho Deep Ocean" },
 } as const;

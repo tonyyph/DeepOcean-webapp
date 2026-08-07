@@ -35,8 +35,8 @@ export function ScreensPreviewSection() {
         </div>
         <p className="capture-note">
           <T
-            en="Still needed: onboarding, surfaced rewards, session detail, the actual paywall, notifications, and real-device Live Activity captures. See the asset audit for the complete capture list."
-            vi="Vẫn còn thiếu: giới thiệu ban đầu, phần thưởng khi trồi lên, chi tiết phiên, paywall thật, thông báo, và ảnh chụp Live Activity trên thiết bị thật. Xem bản kiểm kê tài nguyên để biết danh sách đầy đủ."
+            en="Still needed: onboarding, surfaced rewards, session detail, notifications, and real-device Live Activity captures. See the asset audit for the complete capture list."
+            vi="Vẫn còn thiếu: giới thiệu ban đầu, phần thưởng khi trồi lên, chi tiết phiên, thông báo, và ảnh chụp Live Activity trên thiết bị thật. Xem bản kiểm kê tài nguyên để biết danh sách đầy đủ."
           />
         </p>
       </div>

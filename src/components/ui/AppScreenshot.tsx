@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 type AppScreenshotProps = {
-  screen: "home" | "dive" | "collection" | "stats" | "ai" | "premium";
+  screen: "home" | "dive" | "collection" | "stats" | "ai";
   compact?: boolean;
   priority?: boolean;
 };
@@ -28,11 +28,7 @@ const screenDetails: Record<
   },
   ai: {
     src: "/screenshots/ai.png",
-    alt: "Deep Ocean Marine Guide screen with daily guidance, session reflection, and Pro insights",
-  },
-  premium: {
-    src: "/screenshots/premium.png",
-    alt: "Deep Ocean Profile screen showing active Pro access, XP, themes, and settings",
+    alt: "Deep Ocean Marine Guide screen with daily guidance and session reflection",
   },
 };
 

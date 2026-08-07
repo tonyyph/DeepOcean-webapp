@@ -53,7 +53,6 @@ The following 1290×2796 images are real app captures and visually match the cur
 | `public/screenshots/collection.png` | Expedition Log / collection | Yes |
 | `public/screenshots/stats.png` | Dive Analytics / history | Yes |
 | `public/screenshots/ai.png` | Marine Guide / AI companion | Yes |
-| `public/screenshots/premium.png` | Profile with Pro active | Yes, but do not label it as the paywall |
 
 The current captures show the Prism Water theme and English UI. They contain sample local user data, which is acceptable as an authentic in-app state but must not be presented as universal product results.
 
@@ -94,7 +93,7 @@ under `public/`.
 | Feature story: record | `public/screenshots/stats.png` | Real Dive Analytics capture |
 | Loved by travelers preview | `public/screenshots/home.png` | Real Home capture, cropped within the card |
 | Loved by travelers preview | `public/assets/app-icon.png` | App icon |
-| Product preview gallery | `public/screenshots/home.png`, `dive.png`, `collection.png`, `stats.png`, `ai.png`, `premium.png` | Six real app captures |
+| Product preview gallery | `public/screenshots/home.png`, `dive.png`, `collection.png`, `stats.png`, `ai.png` | Five real app captures |
 | Marine Guide | `public/screenshots/ai.png` | Real Marine Guide capture |
 | Widgets | `public/screenshots/widget-portal.png` | Repository-sourced widget concept sheet |
 | Analytics | `public/screenshots/stats.png` | Real Dive Analytics capture |
@@ -113,7 +112,7 @@ award/badge asset exists in the repository.
   - Numeric/telemetry: JetBrains Mono
 - Shape language: rounded cards (18–32px), pill controls, circular progress/depth indicators.
 - Motion: slow organic particles, restrained fades/translations, haptics, and reduced-motion support.
-- Current theme registry: 10 themes total, 3 standard and 7 premium.
+- Current theme registry: 10 themes total in the app.
 
 ## App flow verified from source
 
@@ -156,7 +155,7 @@ Note: `docs/onboarding.md` in the mobile repo describes an older four-slide/long
 
 - XP and levels
 - Current and longest streak
-- Zone unlocks and title achievements
+- New zones and title achievements
 - Total focus, maximum depth, dive count, level
 - Seven-day focus heatmap
 - Recent expedition history
@@ -176,37 +175,24 @@ Note: `docs/onboarding.md` in the mobile repo describes an older four-slide/long
 - Daily recommendation
 - Daily motivation/nudge
 - Last-session reflection
-- Context can include language, level, XP, streaks, total dives, mood, unlocked zones, achievements, and recent sessions
+- Context can include language, level, XP, streaks, total dives, mood, reached zones, achievements, and recent sessions
 - Provider chain can use Gemini, Groq, or OpenRouter when configured
 - Cached response fallback
 - Context-derived offline fallback
-- Standard users currently receive three manual “Ask Again” refreshes per mounted screen session
-- Pro block includes pattern guidance, a mood map, and a breathing ritual
+- Current users receive the app's guidance, mood map, focus planning, and breathing ritual as part of the free experience.
 
-### Standard vs Pro
+### Free Access
 
-Verified standard/core access:
+Verified included access:
 
 - Core timer and free/custom dives
 - Pause/resume/surface
 - XP, levels, streaks
-- Basic collection entries
-- Basic reminders
-- Recent/basic expedition history
-- Three standard themes
-- Standard companion guidance with a limited manual refresh count
-
-Verified Pro access:
-
-- Seven premium themes and Pro visual treatment
-- Full expedition journal/lore
-- Deeper AI insight block
-- Mood-correlated plan/pattern presentation
-- Breathing ritual
-- Unlimited manual “Ask Again” behavior while premium
-- Pro tab-bar treatment
-
-RevenueCat purchase plumbing exists for monthly, annual, lifetime, restore, individual theme packages, trial, and promo code. Actual localized products/prices depend on store configuration and must not be claimed on the landing page until production offerings are confirmed.
+- Collection entries and expedition journal/lore
+- Reminders
+- Expedition history
+- App themes and visual treatment
+- AI guidance, mood-correlated planning, and breathing ritual
 
 ### Reminders, widgets, and Live Activity
 
@@ -223,12 +209,11 @@ RevenueCat purchase plumbing exists for monthly, annual, lifetime, restore, indi
 
 Verified local storage:
 
-- Sessions, profile, collection, settings, mood, personalization, achievements, notification state, premium cache, active dive state, AI cache, and widget snapshot are persisted on-device with MMKV.
+- Sessions, profile, collection, settings, mood, personalization, achievements, notification state, active dive state, AI cache, and widget snapshot are persisted on-device with MMKV.
 
 Network-dependent areas:
 
 - Optional hosted AI requests are sent to the configured provider.
-- RevenueCat is used for purchases/entitlements when configured.
 - Expo Updates is configured for app updates.
 
 Safe landing wording:
@@ -250,18 +235,16 @@ Those statements are not established by the current source.
 
 - Public release status: store URLs are not present in the landing repo.
 - Beta signup destination: no form, email endpoint, or external signup URL is configured.
-- Production RevenueCat products, localized prices, and whether trial/promo flows will ship in the first store build.
 - Whether all three widget concepts will ship publicly on both platforms.
 - Live Activity device/build QA status. The bridge and native configuration exist, but a real-device screenshot is not present.
 - Hosted AI provider availability in production builds; public API keys are currently configuration-dependent.
 - The exact privacy-policy, terms, support, and contact URLs.
 - “Advanced analytics/full history filters” are mentioned as future work in product notes but are not implemented; do not market them.
 - A break state is not implemented. The widget `skip_break` action is only a compatibility fallback and must not be advertised as a break timer.
-- The paywall contains trial/promo UI, but production purchase availability depends on billing configuration.
 
 ## Screenshots needed
 
-The landing can launch using the six verified portrait captures, verified
+The landing can launch using the five verified portrait captures, verified
 widget artwork, and the labeled widget concept sheet above. The following real
 captures should still be supplied to represent the complete product accurately:
 
@@ -271,13 +254,11 @@ captures should still be supplied to represent the complete product accurately:
 4. Dive session at a deeper zone with a real discovery overlay
 5. Session completed / surfaced reward state
 6. Session detail / expedition report
-7. Collection item story sheet with standard content
-8. Collection item full Pro journal state
-9. Actual paywall sheet (standard user, production offering state)
-10. Daily reminder settings
-11. Notification center
-12. iPhone Live Activity on Lock Screen / Dynamic Island
-13. Android active-dive notification
+7. Collection item story sheet
+8. Daily reminder settings
+9. Notification center
+10. iPhone Live Activity on Lock Screen / Dynamic Island
+11. Android active-dive notification
 14. Real installed iOS widget screenshots for each widget family intended to ship
 15. Real installed Android widget screenshots for each size intended to ship
 16. Vietnamese Home or Dive screen for localization proof

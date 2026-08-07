@@ -75,7 +75,7 @@ Choose a quick duration, set a custom timer, or begin an open-ended free dive. F
 
 ### AI Reflection Companion
 
-Receive context-aware reflections shaped by goals, recent sessions, mood, streaks, achievements, and unlocked zones, with graceful local fallback when hosted AI is unavailable.
+Receive context-aware reflections shaped by goals, recent sessions, mood, streaks, achievements, and reached zones, with graceful local fallback when hosted AI is unavailable.
 
 **Benefit:** Turn raw session data into a useful next step instead of another dashboard to interpret.
 
@@ -115,15 +115,15 @@ Follow an active timed dive outside the app through iPhone Live Activities, back
 
 **Benefit:** Stay aware of the session without reopening the app or breaking concentration.
 
-### Premium Themes
+### Included Themes
 
-DeepOcean Pro unlocks seven visual identities with distinct palettes, typography, gradients, particles, and ambient effects.
+DeepOcean includes the app's visual identities with distinct palettes, typography, gradients, particles, and ambient effects in the current free experience.
 
 **Benefit:** Make the focus environment feel personal while keeping the core experience calm and coherent.
 
 ### Streak Tracking
 
-Track current and longest streaks alongside levels, XP, titles, achievements, and zone unlocks.
+Track current and longest streaks alongside levels, XP, titles, achievements, and new zones.
 
 **Benefit:** Reward returning consistently—not merely completing one heroic session.
 
@@ -149,12 +149,10 @@ Explore weekly patterns, mood-correlated trends, preferred session lengths, dept
   <tr>
     <td align="center"><img src="./public/screenshots/ai.png" alt="DeepOcean Marine Guide AI screen" width="250" /></td>
     <td align="center"><img src="./public/screenshots/stats.png" alt="DeepOcean dive analytics screen" width="250" /></td>
-    <td align="center"><img src="./public/screenshots/premium.png" alt="DeepOcean Pro profile screen" width="250" /></td>
   </tr>
   <tr>
     <td align="center"><strong>Marine Guide</strong><br /><sub>Personal reflections shaped by your focus behavior.</sub></td>
     <td align="center"><strong>Dive analytics</strong><br /><sub>See weekly rhythm, records, and expedition history.</sub></td>
-    <td align="center"><strong>DeepOcean Pro</strong><br /><sub>Premium themes, deeper insights, and full journals.</sub></td>
   </tr>
 </table>
 
@@ -189,7 +187,7 @@ Each concept includes large, medium, and small variants in [`public/screenshots/
 |---|---|---|
 | AI reflection | Context-aware guidance informed by goals and focus history | Usually absent or limited to generic summaries |
 | Ocean exploration | Focus time becomes depth across five evolving zones | Time remains a number on a countdown |
-| Collection system | Sessions unlock creatures, artifacts, lore, and discoveries | Little lasting evidence beyond completed sessions |
+| Collection system | Sessions reveal creatures, artifacts, lore, and discoveries | Little lasting evidence beyond completed sessions |
 | Dynamic themes | Immersive app-wide visual identities and ambient effects | Static colors or basic light and dark modes |
 | Gamification | XP, levels, streaks, titles, zones, and meaningful collections | Streak counters or isolated badges |
 | Widgets | Progress, shortcuts, targets, and dive status at a glance | Basic timer shortcut or no widget support |
@@ -214,7 +212,6 @@ This repository contains the production marketing website. The mobile product ar
 | Mobile application | React Native, Expo, TypeScript | Shared iOS and Android product experience |
 | Local storage | MMKV | Fast, persistent local state and offline-first session data |
 | Server state | React Query | Async data fetching, caching, and synchronization |
-| Subscriptions | RevenueCat | Cross-platform premium entitlements and purchase lifecycle |
 | AI layer | OpenAI, Anthropic, Gemini | Provider-flexible reflection, guidance, and insight generation |
 | Native surfaces | Widget extensions, Live Activities | Glanceable progress and active-session updates outside the app |
 
@@ -248,7 +245,7 @@ cp .env.example .env.local
 |---|:---:|---|---|
 | `NEXT_PUBLIC_SITE_URL` | No | `https://deepocean.io.vn` | Canonical base URL used by metadata, sitemap, robots, and social sharing |
 
-AI provider credentials and RevenueCat keys belong to the mobile app or a secure server-side integration. They are not read by this marketing website and should never be exposed through public `NEXT_PUBLIC_*` variables.
+AI provider credentials belong to the mobile app or a secure server-side integration. They are not read by this marketing website and should never be exposed through public `NEXT_PUBLIC_*` variables.
 
 ### Run
 
@@ -299,7 +296,6 @@ flowchart TB
         Fallback["Local fallback guidance"]
     end
 
-    RevenueCat["RevenueCat subscriptions"]
     Widgets["Home-screen widgets"]
     Live["Live Activities & active-dive notifications"]
 
@@ -314,7 +310,6 @@ flowchart TB
     Router --> Anthropic
     Router --> Gemini
     Insights -. offline .-> Fallback
-    Mobile <--> RevenueCat
     Focus --> Widgets
     Focus --> Live
     Widgets --> User
